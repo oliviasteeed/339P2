@@ -1,0 +1,57 @@
+
+
+@font-face {
+	font-family: 'Alte Haas Grotesk';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/altehaasgrotesk-regular.eot');
+	src: url('../fonts/altehaasgrotesk-regular.eot?#iefix') format('embedded-opentype'), 
+		 url('../fonts/altehaasgrotesk-regular.woff2') format('woff2'), 
+		 url('../fonts/altehaasgrotesk-regular.woff') format('woff'),
+		 url('../fonts/altehaasgrotesk-regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Alte Haas Grotesk';
+	font-weight: bold;
+	font-style: normal;
+	src: url('../fonts/altehaasgrotesk-bold.eot');
+	src: url('../fonts/altehaasgrotesk-bold.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/altehaasgrotesk-bold.woff2') format('woff2'),
+		 url('../fonts/altehaasgrotesk-bold.woff') format('woff'),
+		 url('../fonts/altehaasgrotesk-bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Super Display';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/gt-super-display-regular.eot');
+	src: url('../fonts/gt-super-display-regular.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/gt-super-display-regular.woff2') format('woff2'),
+		 url('../fonts/gt-super-display-regular.woff') format('woff'),
+		 url('../fonts/gt-super-display-regular.ttf') format('truetype');
+}
+
+/* probably don't need this one?*/
+/* @font-face {
+	font-family: 'Super Display';
+	font-weight: light;
+	font-style: normal;
+	src: url('../fonts/gt-super-display-light.eot');
+	src: url('../fonts/gt-super-display-light.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/gt-super-display-light.woff2') format('woff2'),
+		 url('../fonts/gt-super-display-light.woff') format('woff'),
+		 url('../fonts/gt-super-display-light.ttf') format('truetype');
+} */
+
+@font-face {
+	font-family: 'Pilowlava';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/pilowlava-regular.eot');
+	src: url('../fonts/pilowlava-regular.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/pilowlava-regular.woff2') format('woff2'),
+		 url('../fonts/pilowlava-regular.woff') format('woff'),
+		 url('../fonts/pilowlava-regular.ttf') format('truetype');
+}

@@ -1,0 +1,372 @@
+/* setting different default font/size/colour
+I used Helmine's lecture example from last week for how to add custom fonts. */
+body {
+    font-family: "Alte Haas Grotesk", Helvetica, sans-serif;
+    color: #073D02;
+    font-size: 1rem;
+    background-color: #FCFAF7;
+
+}
+
+/* Making button green and larger/changing font
+This website was used as a reference for making the button rounded
+https://www.w3schools.com/howto/howto_css_round_buttons.asp
+*/
+.button {
+    text-align: left;
+    font-family: "Alte Haas Grotesk", Helvetica, sans-serif;
+    display: inline-block;
+    color: #FCFAF7;
+    /* background-color: #073D02; */
+    /* font-size: 1.5rem; */
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border: 0.3rem;
+    border-radius: 0.15rem;
+    transition: background-color 0.25s ease-in-out;
+}
+
+.button-reset {
+    background-color: #FCFAF7;
+    color: #073D02;
+}
+
+.button-submit {
+    background-color: #073D02;
+    margin: 1rem;
+}
+
+
+/* Making header lime green and extend to screen edges*/
+header {
+    background-color: #EBFC72;
+    padding: 4rem;
+    margin-left: -3rem;
+    margin-right: -3rem;
+    margin-top: -3rem;
+}
+
+/* Making navigation green/larger text*/
+.main-nav {
+    font-family: "Alte Haas Grotesk", Helvetica, sans-serif;
+    color: #073D02;
+    font-size: 1.5rem;
+}
+
+/* Styling in-text links (and navigation) */
+a {
+    transition: color 0.3s;
+    color: #073D02;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* making clickable text turn pink and get an underline on hover */
+/* I referred to Helmine's lecture example from week 2 for this*/
+a:active,
+a:hover {
+    text-decoration: underline;
+    color: #FC72CA;
+}
+
+/* making focus text get an underline on hover */
+/* I referred to Helmine's lecture example from week 2 for this*/
+a:focus {
+    text-decoration: underline;
+}
+
+/* Change opacity of image link on hover */
+/* I referred to this website for how to ease in and out for the opacity change
+https://www.w3schools.com/css/css3_transitions.asp
+I referred to this website for how to change the opacity of an image:
+https://www.w3schools.com/howto/howto_css_image_overlay.asp
+*/
+.image-as-link:hover {
+    transition: 0.5s;
+    opacity: 0.5;
+}
+
+.image-as-link:focus {
+    transition: 0.5s ease-in-out;
+    opacity: 0.5;
+}
+
+/* Changing background colour of element class items */
+.element {
+    background-color: #F3E8E0;
+    border-radius: 0.3rem;
+}
+
+/* adding space between sections */
+section {
+    margin: 2rem;
+}
+
+/* making citations section lime green*/
+footer {
+    background-color: #EBFC72;
+    margin-left: -3rem;
+    margin-right: -3rem;
+    margin-bottom: -5rem;
+    padding: 3rem;
+}
+
+/* Showing squares of brand colours */
+.offwhite-square {
+    height: 6rem;
+    width: 10rem;
+    background-color: #FCFAF7;
+    border-radius: 0.3rem;
+    /* make corners rounded */
+    margin: 0.5rem;
+}
+
+.tan-square {
+    height: 6rem;
+    width: 10rem;
+    background-color: #F3E8E0;
+    border: 1px solid #FCFAF7;
+    border-radius: 0.3rem;
+    /* make corners rounded */
+    margin: 0.5rem;
+}
+
+.pink-square {
+    height: 6rem;
+    width: 10rem;
+    background-color: #FC72CA;
+    border-radius: 0.3rem;
+    /* make corners rounded */
+    margin: 0.5rem;
+}
+
+.lime-square {
+    height: 6rem;
+    width: 10rem;
+    background-color: #EBFC72;
+    border-radius: 0.3rem;
+    /* make corners rounded */
+    margin: 0.5rem;
+}
+
+.green-square {
+    height: 6rem;
+    width: 10rem;
+    background-color: #073D02;
+    border-radius: 0.3rem;
+    /* make corners rounded */
+    margin: 0.5rem;
+}
+
+
+
+/* Type Styling*/
+h1 {
+    font-family: "Super Display", 'Times New Roman', Times, serif, serif;
+    font-weight: normal;
+    font-size: 4rem;
+    letter-spacing: -0.12rem;
+}
+
+h2 {
+    font-family: "Super Display", 'Times New Roman', Times, serif, serif;
+    font-weight: normal;
+    font-size: 3rem;
+    letter-spacing: -0.10rem;
+}
+
+h3 {
+    font-family: "Alte Haas Grotesk", Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 1.7rem;
+}
+
+h4 {
+    font-family: "Alte Haas Grotesk", Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 1.4rem;
+}
+
+/* logo styling for header */
+.logo {
+    font-family: "Pilowlava", Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 5rem;
+    letter-spacing: -0.30rem;
+    margin-top: -0.5rem;
+    margin-left: 1rem;
+}
+
+/* logo styling for navigation section */
+.logo-nav {
+    font-family: "Pilowlava", Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 2.5rem;
+    letter-spacing: -0.15rem;
+}
+
+
+
+/* making paragraph line length shorter (but still resizable), adding padding on left and right, increasing line spacing*/
+.paragraph {
+    font-size: 1rem;
+    max-width: 40rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    /* used this website for reference on how to adjust line height
+    https://www.w3schools.com/cssref/pr_dim_line-height.php */
+    line-height: 160%;
+}
+
+/* increasing spacing between list bullets */
+/* I used this website as a reference for adding spaces between bullets 
+https://www.liontreegroup.com/tips-and-tricks/adding-spaces-between-paragraphs-or-bullet-points-in-wordpress/
+*/
+li {
+    padding-bottom: 1rem;
+}
+
+/* adding space around section elements*/
+.element {
+    padding: 1rem;
+
+}
+
+/*changing colour of text field input bar on hover*/
+input:hover {
+    background-color: #FC72CA
+}
+
+/*changing colour of text field input bar on focus*/
+input:focus {
+    background-color: #EBFC72;
+}
+
+
+/*changing colour of text field input bar when active*/
+input:active {
+    background-color: #EBFC72;
+}
+
+/*adding space between form text fields*/
+input {
+    margin-bottom: 0.9rem;
+    margin-right: 0.9rem;
+    border: 0.1rem;
+    padding: 0.5rem;
+    border-radius: 0.15rem;
+}
+
+/* Changing placeholder text font and colour
+I used this website for the code for how to do this
+https://developer.mozilla.org/en-US/docs/Web/CSS/::placeholder*/
+input::placeholder {
+    font-family: "Alte Haas Grotesk", Helvetica, sans-serif;
+    color: rgb(7, 61, 2, 0.35);
+
+}
+
+/*adding space between form text fields*/
+label {
+    font-family: "Alte Haas Grotesk", Helvetica, sans-serif;
+}
+
+select {
+    font-family: "Alte Haas Grotesk", Helvetica, sans-serif;
+    margin-bottom: 0.9rem;
+    margin-right: 0.9rem;
+    border: 0.1rem;
+    padding: 0.5rem;
+    border-radius: 0.15rem;
+    color: #073D02;
+}
+
+/* I referred to this website for how to make the dropdown change colour on hover/active 
+https://stackoverflow.com/questions/10484053/change-select-list-option-background-colour-on-hover
+*/
+select:hover {
+    background-color: #FC72CA;
+}
+
+select:active,
+select:focus {
+    background-color: #EBFC72;
+}
+
+/*making all text have green background when selected*/
+p::selection {
+    background-color: #EBFC72;
+}
+
+code::selection {
+    background-color: #EBFC72;
+}
+
+h1::selection {
+    background-color: #EBFC72;
+}
+
+h2::selection {
+    background-color: #EBFC72;
+}
+
+h3::selection {
+    background-color: #EBFC72;
+}
+
+h4::selection {
+    background-color: #EBFC72;
+}
+
+h5::selection {
+    background-color: #EBFC72;
+}
+
+a::selection {
+    background-color: #EBFC72;
+}
+
+ul::selection {
+    background-color: #EBFC72;
+}
+
+ol::selection {
+    background-color: #EBFC72;
+}
+
+li::selection {
+    background-color: #EBFC72;
+}
+
+/* make image ratio locked and not extend past full size*/
+/*I used this website for a reference of how to have the image scale up without distorting to fit flexbox size
+https://www.javatpoint.com/how-to-change-image-size-in-css#:~:text=Sometimes%2C%20it%20is%20required%20to,the%20width%20of%20their%20container.
+*/
+img {
+    object-fit: cover;
+    padding: 0.5rem;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* white background with rounded corners for cart/product listings*/
+.card {
+    background-color: #FCFAF7;
+    border: 0.3rem;
+    border-radius: 0.3rem;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+
+/* increasing spacing between code lines */
+code {
+    line-height: 160%;
+}
+
+/* increasing spacing between listing images (on listing page) */
+.listing {
+    margin: 0.5rem;
+}
