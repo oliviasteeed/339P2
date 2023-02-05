@@ -46,19 +46,20 @@ header {
     margin-top: -3rem;
 }
 
-/* Making navigation green/larger text*/
+/* Making navigation green/larger text and have no underline normally*/
 .main-nav {
     font-family: "Alte Haas Grotesk", Helvetica, sans-serif;
     color: #073D02;
     font-size: 1.5rem;
+    text-decoration: none;
 }
 
 /* Styling in-text links (and navigation) */
+/* normally have underline to indicate they are clickable */
 a {
     transition: color 0.3s;
     color: #073D02;
-    text-decoration: none;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 /* making clickable text turn pink and get an underline on hover */
