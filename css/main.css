@@ -2,7 +2,8 @@
 I used Helmine's lecture example from last week for how to add custom fonts. */
 body {
     font-family: "Alte Haas Grotesk", Helvetica, sans-serif;
-    color: #073D02;
+    /* color: #073D02; */
+    color: #4E08A9;
     font-size: 1rem;
     background-color: #FCFAF7;
 
