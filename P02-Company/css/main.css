@@ -1,0 +1,237 @@
+/* main styling */
+
+/* Making header lime green and extend to screen edges*/
+header{
+    background-color: #EBFC72;
+    /* padding: 4rem; */
+    margin-left: -2rem;
+    margin-right: -0.5rem;
+    margin-top: -0.5rem;
+}
+
+/* Making footer lime green and extend to screen edges*/
+footer {
+    background-color: #EBFC72;
+    /* padding: 4rem; */
+    /* margin-left: -2rem;
+    margin-right: -0.5rem;
+    margin-bottom: -0.5rem; */
+}
+
+/* LINKS STYLING */
+
+/* basic link */
+.text-link{
+    color: #4E08A9;
+}
+
+/* no underline on navigational links */
+.nav-link{
+    text-decoration: none;
+}
+
+/* Styling in-text links (and navigation) */
+a {
+    transition: color 0.3s;
+    color: #4E08A9;
+    /* text-decoration: none; */
+    /* font-weight: bold; */
+}
+
+/* making clickable text turn pink and get an underline on hover */
+/* I referred to Helmine's lecture example from week 2 for this*/
+a:active,
+a:hover {
+    text-decoration: underline;
+    color: #FC72CA;
+}
+
+/* making focus text get an underline on hover */
+/* I referred to Helmine's lecture example from week 2 for this*/
+a:focus {
+    text-decoration: underline;
+}
+
+
+
+
+/* BUTTON AND INPUT STYLING */
+
+/* Making button green and larger/changing font
+This website was used as a reference for making the button rounded
+https://www.w3schools.com/howto/howto_css_round_buttons.asp
+*/
+.button {
+    text-align: left;
+    font-family: "Alte Haas Grotesk", Helvetica, sans-serif;
+    display: inline-block;
+    color: #FCFAF7;
+    background-color: #073D02;
+    /* font-size: 1.5rem; */
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border: 0.3rem;
+    border-radius: 0.15rem;
+    transition: background-color 0.25s ease-in-out;
+}
+
+/*changing colour of text field input bar normally*/
+input{
+    background-color: #EBFC72;
+}
+
+/*changing colour of text field input bar on hover*/
+input:hover {
+    background-color: #FC72CA
+}
+
+/*changing colour of text field input bar on focus*/
+input:focus {
+    background-color: #FCFAF7;
+}
+
+/*changing colour of text field input bar when active*/
+input:active {
+    background-color: #FCFAF7;
+}
+
+/*adding space between form text fields*/
+input {
+    margin-bottom: 0.9rem;
+    margin-right: 0.9rem;
+    border: 0.1rem;
+    padding: 0.5rem;
+    border-radius: 0.15rem;
+}
+
+/* Changing placeholder text font and colour
+I used this website for the code for how to do this
+https://developer.mozilla.org/en-US/docs/Web/CSS/::placeholder*/
+input::placeholder {
+    font-family: "Alte Haas Grotesk", Helvetica, sans-serif;
+    color: rgb(7, 61, 2, 0.35);
+
+}
+
+/*adding space between form text fields*/
+label {
+    font-family: "Alte Haas Grotesk", Helvetica, sans-serif;
+}
+
+select {
+    font-family: "Alte Haas Grotesk", Helvetica, sans-serif;
+    margin-bottom: 0.9rem;
+    margin-right: 0.9rem;
+    border: 0.1rem;
+    padding: 0.5rem;
+    border-radius: 0.15rem;
+    color: #073D02;
+}
+
+/* I referred to this website for how to make the dropdown change colour on hover/active 
+https://stackoverflow.com/questions/10484053/change-select-list-option-background-colour-on-hover
+*/
+select:hover {
+    background-color: #FC72CA;
+}
+
+select:active,
+select:focus {
+    background-color: #EBFC72;
+}
+
+
+
+/* TEXT STYLING */
+
+body {
+    font-family: "Alte Haas Grotesk", Helvetica, sans-serif;
+    color: #4E08A9;
+    /* font-size: 2rem; */
+    background-color: #FCFAF7;
+}
+
+
+/* Type Styling*/
+h1 {
+    font-family: "Super Display", 'Times New Roman', Times, serif, serif;
+    font-weight: normal;
+    font-size: 4rem;
+    letter-spacing: -0.12rem;
+}
+
+h2 {
+    font-family: "Super Display", 'Times New Roman', Times, serif, serif;
+    font-weight: normal;
+    font-size: 3rem;
+    letter-spacing: -0.10rem;
+}
+
+h3 {
+    font-family: "Alte Haas Grotesk", Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 1.7rem;
+}
+
+h4 {
+    font-family: "Alte Haas Grotesk", Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 1.4rem;
+}
+
+/* logo styling for header */
+.logo {
+    font-family: "Pilowlava", Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 5rem;
+    letter-spacing: -0.30rem;
+    margin-top: -0.5rem;
+    margin-left: 1rem;
+}
+
+/* logo styling for navigation section */
+.logo-nav {
+    font-family: "Pilowlava", Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 2.5rem;
+    letter-spacing: -0.15rem;
+}
+
+
+
+
+
+
+
+
+/* FLEXBOXES (PUT IN ANOTHER CSS FILE AFTER */
+
+.box{
+    display:flex;
+    flex-wrap:wrap;
+    padding:2rem;
+}
+
+.box-nav{
+    display:flex;
+    flex: 1;
+    padding:1rem;
+    padding-left:2.5rem;
+    align-self:baseline;
+}
+
+.box-nav-right{
+    display:flex;
+    flex: 1;
+    padding:1rem;
+    padding-right:2.5rem;
+    justify-content:right;
+    align-self:baseline;
+}
+
+
+/* .box-bottom{
+    align-self:baseline;
+} */
+
+
