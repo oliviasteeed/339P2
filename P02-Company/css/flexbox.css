@@ -1,0 +1,99 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+/* NAVIGATION */
+.box{
+    display:flex;
+    flex-wrap:wrap;
+    padding:2rem;
+}
+
+.box-nav{
+    display:flex;
+    flex: 1;
+    padding:1rem;
+    padding-left:2.5rem;
+    align-self:baseline;
+}
+
+.box-nav-right{
+    display:flex;
+    flex: 1;
+    padding:1rem;
+    padding-right:2.5rem;
+    justify-content:right;
+    align-self:baseline;
+}
+
+
+
+/*HOME PAGE*/
+
+/* parent flexbox (rows)*/
+.box-row {
+    display: flex;
+    flex-wrap: wrap;
+    border:1px red solid;
+    flex: 1 1 auto;
+}
+
+/* parent flexbox (columns)*/
+.box-column {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex: 1 1 auto;
+    border:1px blue solid;
+}
+
+/* aligning in center of main axis*/
+.box-center-align-vertical{
+    /* align-content:center; */
+    /* flex: 1 3 16.6vw; */
+    flex: 0 1 5rem;
+    border:1px solid orange;
+}
+
+/* aligning in center of cross axis*/
+.box-center-align-horizontal{
+    flex-direction:column;
+    align-self:center;
+
+    border:1px solid black;
+}
+
+
+
+/* TEXT BOX */
+.text-box{
+    padding:1rem;
+}
+
+.box-graphic{
+    flex 1 1 3rem;
+    /* min-width: 3rem; */
+    max-width: 20rem;
+    padding: 1rem;
+    margin:1rem;
+}
+
+.box-group{
+    max-width:50vw;
+}
+
+
+/*GRIDS - rename css file or sm??*/
+
+.viewport-column-2-of-2{
+    position:absolute;
+    left:50vw;
+}
+
+/* .viewport-padding-left{
+    position:absolute;
+    left: 1rem;
+} */
+

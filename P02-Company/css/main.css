@@ -22,18 +22,19 @@ footer {
 
 /* basic link */
 .text-link{
-    color: #4E08A9;
+    color: #073D02;
 }
 
 /* no underline on navigational links */
 .nav-link{
     text-decoration: none;
+    font-size:0.9rem;
 }
 
 /* Styling in-text links (and navigation) */
 a {
     transition: color 0.3s;
-    color: #4E08A9;
+    color: #073D02;
     /* text-decoration: none; */
     /* font-weight: bold; */
 }
@@ -43,7 +44,8 @@ a {
 a:active,
 a:hover {
     text-decoration: underline;
-    color: #FC72CA;
+    color: #FF5C00;
+
 }
 
 /* making focus text get an underline on hover */
@@ -146,7 +148,7 @@ select:focus {
 
 body {
     font-family: "Alte Haas Grotesk", Helvetica, sans-serif;
-    color: #4E08A9;
+    color: #073D02;
     /* font-size: 2rem; */
     background-color: #FCFAF7;
 }
@@ -193,45 +195,47 @@ h4 {
 .logo-nav {
     font-family: "Pilowlava", Helvetica, sans-serif;
     font-weight: normal;
-    font-size: 2.5rem;
-    letter-spacing: -0.15rem;
+    font-size: 1.6rem;
+    letter-spacing: -0.05rem;
+}
+
+p{
+    max-width: 40vw;
 }
 
 
 
 
+/* landing image */
 
-
-
-
-/* FLEXBOXES (PUT IN ANOTHER CSS FILE AFTER */
-
-.box{
-    display:flex;
-    flex-wrap:wrap;
-    padding:2rem;
+.landing-image{
+ max-width: 100vw;
 }
 
-.box-nav{
-    display:flex;
-    flex: 1;
-    padding:1rem;
-    padding-left:2.5rem;
-    align-self:baseline;
+.landing-image-small{
+    max-width: 16vw;
+    position:relative;
+   }
+
+.landing-image-relative{
+    max-width: 16vw;
+    position:absolute;
+    left:0;
+    bottom:0;
+    z-index:1;
+
+   }
+
+/*for page sections with green bg*/
+.green-bg{
+    background-color:#EBFC72;
 }
 
-.box-nav-right{
-    display:flex;
-    flex: 1;
-    padding:1rem;
-    padding-right:2.5rem;
-    justify-content:right;
-    align-self:baseline;
+/*for page sections with white bg*/
+.white-bg{
+    background-color:#FCFAF7;
 }
 
 
-/* .box-bottom{
-    align-self:baseline;
-} */
 
 
