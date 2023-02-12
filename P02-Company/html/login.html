@@ -11,7 +11,7 @@
 
   <link href="../css/main.css" rel="stylesheet">
   <link href="../css/fonts.css" rel="stylesheet">
-  <!-- <link href="css/flexbox.css" rel="stylesheet"> -->
+  <link href="../css/flexbox.css" rel="stylesheet">
 
 </head>
 
@@ -21,44 +21,89 @@
 
     <!-- navigation menu-->
     <nav class="box">
-        <a href="../html/buy.html" class="box-nav text-link">buy</a>
-        <a href="../html/sell.html" class="box-nav text-link">sell</a>
-        <a href="../html/learn.html" class="box-nav text-link">learn</a>
-        <a href="../index.html" class="logo-nav box-nav text-link">FANCYPLANTS</a>
-        <a href="../html/about.html" class="text-link box-nav-right">about</a>
-        <a href="../html/login.html" class="text-link box-nav-right">log in</a>
-        <a href="../html/cart.html" class="text-link box-nav-right">cart</a>
-      </nav>
+      <a href="../html/buy.html" class="box-nav nav-link">buy</a>
+      <a href="../html/sell.html" class="box-nav nav-link">sell</a>
+      <a href="../html/learn.html" class="box-nav nav-link">learn</a>
+      <a href="../index.html" class="logo-nav box-nav nav-link">FANCYPLANTS</a>
+      <a href="../html/about.html" class="nav-link box-nav-right">about</a>
+      <a href="../html/login.html" class="nav-selected box-nav-right">log in</a>
+      <a href="../html/cart.html" class="box-nav-right nav-link">cart</a>
+    </nav>
 
   </header>
 
-  <h2>of course you want to join.</h2>
-  <p> no fees, no annoying emails, just plants: the way it should be :)</p>
-
-    <!-- Login form -->
-
-    <form>
-        <fieldset>
-            <!-- Username -->
-            <label for="username-input"> username:</label>
-            <input type="text" id="username-inpu"> <br>
-    
-            <!-- Password-->
-            <label for="password-input"> password:</label>
-            <input type="text" id="password-input"> <br>
-    
-          <!-- Submit button-->
-          <!-- I used this website for the code for a button
-              https://learn.shayhowe.com/html-css/building-forms/-->
-          <input class="button" type="submit" value="log in" onclick="window.location.href='../html/buy.html'">
-          </fieldset>
-    </form>
-
-
   <body>
 
+    <section class="padding-section">
+      <h2>of course you want to join</h2>
+      <p> no fees, no annoying emails, just plants: the way it should be :)</p>
+
+      <!-- Login form -->
+
+      <div class="box-row">
+
+        <fieldset class="grid-col-6of10">
+
+          <div class="box-column">
+
+            <div class="box-row box-input">
+              <!-- Username -->
+              <label for="username-input"> username:</label>
+              <input type="text" id="username-input" class="text-input"> <br>
+            </div>
+
+            <div class="box-row">
+              <!-- Password-->
+              <label for="password-input" class="box-input"> password:</label>
+              <input type="text" id="password-input" class="box-input text-input"> <br>
+            </div>
+
+            <div class="box-column">
+              <!-- Submit button-->
+              <input class="button box-button" type="submit" value="log in" onclick="window.location.href='buy.html'">
+            </div>
+
+        </fieldset>
+
+
+
+
+      </div>
+
+
+
+
+    </section> <!-- end of login form section-->
+
+
+    <footer class="footer-short-page">
+
+      <div class="box-row">
+        <!-- logo and slogan-->
+        <div class="box-column">
+          <h4 class="logo-nav top-align"> © FANCYPLANTS 2023</h4>
+          <p class="p1 top-align"> plant care is self care </p>
+        </div>
+
+        <!-- links-->
+        <div class="box-column">
+          <a href="html/buy.html" class="text-link p1 right-align">buy</a>
+          <a href="html/sell.html" class="text-link p1 right-align">sell</a>
+          <a href="html/learn.html" class="text-link p1 right-align">learn</a>
+        </div>
+
+        <div class="box-column">
+          <a href="html/about.html" class="text-link p1 right-align">about</a>
+          <a href="html/login.html" class="text-link p1 right-align">log in</a>
+          <a href="html/cart.html" class="text-link p1 right-align">cart</a>
+        </div>
+
+      </div>
+
+
+    </footer>
 
   </body>
 
 
-  </html>
+</html>

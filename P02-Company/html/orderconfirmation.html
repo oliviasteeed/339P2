@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>CART</title>
+
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/fonts.css" rel="stylesheet">
+    <link href="../css/flexbox.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+
+        <!-- navigation menu-->
+        <nav class="box">
+            <a href="../html/buy.html" class="box-nav nav-link">buy</a>
+            <a href="../html/sell.html" class="box-nav nav-link">sell</a>
+            <a href="../html/learn.html" class="box-nav nav-link">learn</a>
+            <a href="../index.html" class="logo-nav box-nav nav-link">FANCYPLANTS</a>
+            <a href="../html/about.html" class="nav-link box-nav-right">about</a>
+            <a href="../html/login.html" class="nav-link box-nav-right">log in</a>
+            <a href="../html/cart.html" class="nav-selected box-nav-right">cart</a>
+        </nav>
+
+    </header>
+
+    <body>
+
+        <section class="padding-section">
+
+            <div class="box-row">
+
+                <div class="box-column">
+                    <h2>thank you for your order</h2>
+                    <p>The planter has received your order and will start processing it now! Start clearing shelf
+                        space...</p>
+
+                    <input class="button button-submit" type="submit" value="leave a review"
+                        onclick="window.location.href='orderconfirmationreview.html';">
+                    <input class="button button-submit" type="submit" value="view new listings"
+                        onclick="window.location.href='buy.html';">
+                </div>
+
+                <div class="box-column"> <!-- cart summary card -->
+
+                    <section class="section">
+
+                        <div class="box-column"> <!-- stacking components-->
+                            <h4 class="">reciept for order 123456 </h4>
+
+                            <div class="box-row"> <!-- item 1 summary + price beside it-->
+                                <p class="p1">pink princess philodendron x 1</p>
+                                <p class="p1 price box-row box-right"> $5</p>
+                            </div>
+
+                            <div class="box-row"> <!-- item 2 summary + price beside it-->
+                                <p class="p1 box-text">snow queen pothos x 1</p>
+                                <p class="p1 price box-row box-text box-right"> $3</p>
+                            </div>
+
+                            <div class="box-row"> <!-- item 2 summary + price beside it-->
+                                <p class="p1 box-text">marble queen pothos x 1</p>
+                                <p class="p1 price box-row box-text box-right"> $2</p>
+                            </div>
+
+                            <div class="box-row"> <!-- order subtotal-->
+                                <p class="p1 box-text"> order subtotal:</p>
+                                <p class="p1 price box-row box-text box-right"> $9</p>
+                            </div>
+
+                            <div class="box-row"> <!-- shipping-->
+                                <p class="p1"> shipping:</p>
+                                <p class="p1 box-row box-right"> FREE</p>
+                            </div>
+
+                            <div class="box-row"> <!-- taxes -->
+                                <p class="p1"> taxes:</p>
+                                <p class="p1 price box-row box-right"> $1.08</p>
+                            </div>
+
+                            <div class="box-row"> <!-- order total -->
+                                <h4 class=""> order total:</h4>
+                                <h4 class="box-row price box-right"> $10.08</h4>
+                            </div>
+
+                        </div> <!-- end of order summary stack -->
+
+                    </section>
+
+
+                </div> <!-- end of cart summary card -->
+
+
+            </div>
+        </section>
+
+
+
+            <footer class="footer-short-page">
+
+                <div class="box-row">
+                    <!-- logo and slogan-->
+                    <div class="box-column">
+                        <h4 class="logo-nav top-align"> © FANCYPLANTS 2023</h4>
+                        <p class="p1 top-align"> plant care is self care </p>
+                    </div>
+
+                    <!-- links-->
+                    <div class="box-column">
+                        <a href="html/buy.html" class="text-link p1 right-align">buy</a>
+                        <a href="html/sell.html" class="text-link p1 right-align">sell</a>
+                        <a href="html/learn.html" class="text-link p1 right-align">learn</a>
+                    </div>
+
+                    <div class="box-column">
+                        <a href="html/about.html" class="text-link p1 right-align">about</a>
+                        <a href="html/login.html" class="text-link p1 right-align">log in</a>
+                        <a href="html/cart.html" class="text-link p1 right-align">cart</a>
+                    </div>
+
+                </div>
+
+
+            </footer>
+
+
+
+
+
+    </body>
+
+</html>

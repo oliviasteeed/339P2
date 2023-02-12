@@ -11,7 +11,7 @@
 
   <link href="../css/main.css" rel="stylesheet">
   <link href="../css/fonts.css" rel="stylesheet">
-  <!-- <link href="css/flexbox.css" rel="stylesheet"> -->
+  <link href="../css/flexbox.css" rel="stylesheet">
 
 </head>
 
@@ -21,24 +21,228 @@
 
     <!-- navigation menu-->
     <nav class="box">
-        <a href="../html/buy.html" class="box-nav text-link">buy</a>
-        <a href="../html/sell.html" class="box-nav text-link">sell</a>
-        <a href="../html/learn.html" class="box-nav text-link">learn</a>
-        <a href="../index.html" class="logo-nav box-nav text-link">FANCYPLANTS</a>
-        <a href="../html/about.html" class="text-link box-nav-right">about</a>
-        <a href="../html/login.html" class="text-link box-nav-right">log in</a>
-        <a href="../html/cart.html" class="text-link box-nav-right">cart</a>
+        <a href="../html/buy.html" class="box-nav nav-link">buy</a>
+        <a href="../html/sell.html" class="box-nav nav-link">sell</a>
+        <a href="../html/learn.html" class="box-nav nav-link">learn</a>
+        <a href="../index.html" class="logo-nav box-nav nav-link">FANCYPLANTS</a>
+        <a href="../html/about.html" class="nav-link box-nav-right">about</a>
+        <a href="../html/login.html" class="nav-link box-nav-right">log in</a>
+        <a href="../html/cart.html" class="box-nav-right nav-selected">cart</a>
       </nav>
 
   </header>
 
-  <h2> cart</h2>
-  <p> bring that baby home!</p>
+
+  <section class="padding-section">
+
+    <h2>in the cart</h2>
+    <p>bring that baby home!</p>
+
+    <div class="box-row">  <!-- cart items and summary -->
+
+      <div class="box-column large-margin-right"> <!-- cart items stack -->
+
+        <section class="no-padding-section"> <!-- cart item 1 -->
+
+          <div class="box-row flex-1-item">
+
+            <picture class="landing-image-relative">
+              <source media="(min-width: 1200px)" srcset="../img/pink_philo_2x.jpg 2x">
+              <source srcset="img/pink_philo_1x.jpg 1x, ../img/pink_philo_2x.jpg 2x">
+              <img src="../img/pink_philo_1x.jpg 1x" srcset="../img/pink_philo_1x.jpg 1x, ../img/pink_philo_2x.jpg 2x"
+                alt="pink and green variegated houseplant"> 
+            </picture>
+
+            <!-- <img src="../img/pink_philo.jpg" class="landing-image-relative" alt="pink and green variegated houseplant"> -->
+
+            <div class="box-column margin-sides">  <!-- item information-->
+              <div class="box-row">
+                <h4 class="box-row box-title box-baseline-align"> pink princess philodendron</h4>
+                <h4 class="price box-row box-baseline-align box-right">$5</h4>
+              </div>
+
+              <div class="box-row">
+                <p class="p1 box-baseline-align flex-1-item"> Quantity: 1</p>
+
+                <div class="box-baseline-align box-row box-right">
+                  <a class="p1 text-link box-padding-right" href="#"> edit</a>
+                  <a class="p1 text-link" href="#"> remove</a>
+                </div>
+              </div>
+
+            </div> <!-- end of item information-->
+
+          </div>
+
+        </section> <!-- end of cart item 1 -->
+
+        <section class="no-padding-section"> <!-- cart item 2 -->
+
+          <div class="box-row flex-1-item">
+
+            <picture class="landing-image-relative">
+              <source media="(min-width: 1200px)" srcset="../img/snowqueen_2x.jpg 2x">
+              <source srcset="../img/snowqueen_1x.jpg 1x, ../img/snowqueen_2x.jpg 2x">
+              <img src="../img/snowqueen_1x.jpg 1x" srcset="../img/snowqueen_1x.jpg 1x, ../img/snowqueen_2x.jpg 2x"
+                alt="elegant white and green variegated houseplant"> 
+            </picture>
+
+            <!-- <img src="../img/snowqueen-image.jpg" class="landing-image-relative" alt="elegant white and green variegated houseplant"> -->
+
+            <div class="box-column margin-sides">  <!-- item information-->
+              <div class="box-row">
+                <h4 class="box-row box-title box-baseline-align"> snow queen pothos</h4>
+                <h4 class="price box-row box-baseline-align box-right">$3</h4>
+              </div>
+
+              <div class="box-row">
+                <p class="p1 box-baseline-align flex-1-item"> Quantity: 1</p>
+
+                <div class="box-baseline-align box-row box-right">
+                  <a class="p1 text-link box-padding-right" href="#"> edit</a>
+                  <a class="p1 text-link" href="#"> remove</a>
+                </div>
+              </div>
+
+            </div> <!-- end of item information-->
+
+          </div>
+
+        </section> <!-- end of cart item 2 -->
+
+        <section class="no-padding-section"> <!-- cart item 3 -->
+
+          <div class="box-row flex-1-item">
+
+            <picture class="landing-image-relative">
+              <source media="(min-width: 1200px)" srcset="../img/marble_pothos_2x.jpg 2x">
+              <source srcset="img/marble_pothos_1x.jpg 1x, ../img/marble_pothos_2x.jpg 2x">
+              <img src="../img/marble_pothos_1x.jpg 1x" srcset="../img/marble_pothos_1x.jpg 1x, ../img/marble_pothos_2x.jpg 2x"
+                alt="yellow and green housplant with marbled leaves">
+            </picture>
+
+            <!-- <img src="../img/marble_pothos.jpg" class="landing-image-relative" alt="pretty yellow, white and green variegated houseplant"> -->
+
+            <div class="box-column margin-sides">  <!-- item information-->
+              <div class="box-row">
+                <h4 class="box-row box-title box-baseline-align"> marble queen pothos</h4>
+                <h4 class="price box-row box-baseline-align box-right">$2</h4>
+              </div>
+
+              <div class="box-row">
+                <p class="p1 box-baseline-align flex-1-item"> Quantity: 1</p>
+
+                <div class="box-baseline-align box-row box-right">
+                  <a class="p1 text-link box-padding-right" href="#"> edit</a>
+                  <a class="p1 text-link" href="#"> remove</a>
+                </div>
+              </div>
+
+            </div> <!-- end of item information-->
+
+          </div>
+
+        </section> <!-- end of cart item 3 -->
+
+
+      </div> <!-- end of cart items stack -->
+
+
+      <div class="box-column"> <!-- cart summary card -->
+
+          <section class="section">
+
+            <div class="box-column"> <!-- stacking components-->
+              <h4 class="">order summary </h4>
+
+              <div class="box-row"> <!-- item 1 summary + price beside it-->
+                <p class="p1">pink princess philodendron x 1</p>
+                <p class="p1 price box-row box-right"> $5</p>
+              </div>
+
+              <div class="box-row"> <!-- item 2 summary + price beside it-->
+                <p class="p1 box-text">snow queen pothos x 1</p>
+                <p class="p1 price box-row box-text box-right"> $3</p>
+              </div>
+
+              <div class="box-row"> <!-- item 2 summary + price beside it-->
+                <p class="p1 box-text">marble queen pothos x 1</p>
+                <p class="p1 price box-row box-text box-right"> $2</p>
+              </div>
+
+              <div class="box-row"> <!-- order subtotal-->
+                <p class="p1 box-text"> order subtotal:</p>
+                <p class="p1 price box-row box-text box-right"> $9</p>
+              </div>
+
+              <div class="box-row"> <!-- shipping-->
+                <p class="p1"> shipping:</p>
+                <p class="p1 box-row box-right"> FREE</p>
+              </div>
+
+              <div class="box-row"> <!-- taxes -->
+                <p class="p1"> taxes:</p>
+                <p class="p1 price box-row box-right"> $1.08</p>
+              </div>
+
+              <div class="box-row"> <!-- order total -->
+                <h4 class=""> order total:</h4>
+                <h4 class="box-row price box-right"> $10.08</h4>
+              </div>
+
+                <input class="button button-submit" type="submit" value="checkout" onclick="window.location.href='checkout.html';">
+
+            </div> <!-- end of order summary stack -->
+
+          </section>
+
+
+      </div> <!-- end of cart summary card -->
+
+      
+
+    </div> <!-- end of cart items and summary -->
+
+
+    <!-- after this have row of suggested listings (same structure as listing page)-->
 
 
 
 
-  <body>
+
+
+
+
+  </section> <!-- end of sell section-->
+
+
+
+  <footer>
+
+    <div class="box-row">
+      <!-- logo and slogan-->
+      <div class="box-column">
+        <h4 class="logo-nav top-align"> © FANCYPLANTS 2023</h4>
+        <p class="p1 top-align"> plant care is self care </p>
+      </div>
+
+      <!-- links-->
+      <div class="box-column">
+        <a href="html/buy.html" class="text-link p1 right-align">buy</a>
+        <a href="html/sell.html" class="text-link p1 right-align">sell</a>
+        <a href="html/learn.html" class="text-link p1 right-align">learn</a>
+      </div>
+
+      <div class="box-column">
+        <a href="html/about.html" class="text-link p1 right-align">about</a>
+        <a href="html/login.html" class="text-link p1 right-align">log in</a>
+        <a href="html/cart.html" class="text-link p1 right-align">cart</a>
+      </div>
+
+    </div>
+     
+
+  </footer>
 
 
   </body>

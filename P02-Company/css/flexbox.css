@@ -30,13 +30,13 @@
 
 
 
-/*HOME PAGE*/
+/*GENERAL USE BOXES */
 
 /* parent flexbox (rows)*/
 .box-row {
     display: flex;
     flex-wrap: wrap;
-    border:1px red solid;
+    /* border:1px red solid; */
     flex: 1 1 auto;
 }
 
@@ -46,23 +46,23 @@
     flex-wrap: wrap;
     flex-direction: column;
     flex: 1 1 auto;
-    border:1px blue solid;
+    /* border:1px blue solid; */
 }
 
-/* aligning in center of main axis*/
+/* aligning in center of main axis
 .box-center-align-vertical{
-    /* align-content:center; */
-    /* flex: 1 3 16.6vw; */
+    /* align-content:center; 
+    /* flex: 1 3 16.6vw; 
     flex: 0 1 5rem;
     border:1px solid orange;
-}
+} */
 
 /* aligning in center of cross axis*/
 .box-center-align-horizontal{
     flex-direction:column;
     align-self:center;
 
-    border:1px solid black;
+    /* border:1px solid black; */
 }
 
 
@@ -74,15 +74,16 @@
 
 .box-graphic{
     flex 1 1 3rem;
-    /* min-width: 3rem; */
-    max-width: 20rem;
+    /* width:20vw; */
+    /* max-width: 20rem; */
+    /* min-width: 15rem; */
+    width:15rem;
     padding: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
     margin:1rem;
 }
 
-.box-group{
-    max-width:50vw;
-}
 
 
 /*GRIDS - rename css file or sm??*/
@@ -96,4 +97,57 @@
     position:absolute;
     left: 1rem;
 } */
+
+
+
+/* for input box alignment */
+.box-input{
+    /* align-content:top;
+    align-self:top;
+    align-items:top; */
+
+    /* justify-items:flex-start;
+    justify-self:flex-start;
+    justify-content:flex-start; */
+    margin-bottom:1rem;
+}
+
+.box-button{
+    /* justify-content: right; */
+}
+
+.box-right{
+    /* justify-self:right; */
+    /* align-self:right; */
+    /* justify-items: right; */
+    justify-content: right;
+    
+    /* align-self: flex-end;
+    justify-self:flex-end; */
+}
+
+/* align footer links to right */
+.right-align{
+    display:flex;
+    justify-content:right;
+    padding-bottom:0.5rem;
+}
+
+
+.box-baseline-align{
+    align-self:baseline;
+}
+
+.flex-1-item{
+    flex:1;
+}
+
+
+
+/* align title to top (not working) */
+.box-title{
+    justify-items: flex-start;
+    align-items: flex-start;
+}
+
 

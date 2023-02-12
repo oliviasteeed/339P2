@@ -12,10 +12,17 @@ header{
 /* Making footer lime green and extend to screen edges*/
 footer {
     background-color: #EBFC72;
-    /* padding: 4rem; */
-    /* margin-left: -2rem;
+    padding: 2rem 4rem 4rem 4rem;
+    margin-left: -2rem;
     margin-right: -0.5rem;
-    margin-bottom: -0.5rem; */
+    margin-bottom: -0.5rem; 
+}
+
+/*keeps footer at bottom of the page when there is no scroll*/
+.footer-short-page{
+    position: absolute;
+    bottom:0px;
+    width: 102vw;
 }
 
 /* LINKS STYLING */
@@ -28,6 +35,13 @@ footer {
 /* no underline on navigational links */
 .nav-link{
     text-decoration: none;
+    font-size:0.9rem;
+}
+
+/* change color/underline of selected tab*/
+.nav-selected{
+    text-decoration: underline;
+    color: #FF5C00;
     font-size:0.9rem;
 }
 
@@ -66,45 +80,77 @@ https://www.w3schools.com/howto/howto_css_round_buttons.asp
 .button {
     text-align: left;
     font-family: "Alte Haas Grotesk", Helvetica, sans-serif;
-    display: inline-block;
+    /* display: inline-block; */
     color: #FCFAF7;
     background-color: #073D02;
     /* font-size: 1.5rem; */
     text-decoration: none;
-    padding: 1rem 2rem;
-    border: 0.3rem;
+    /* padding: 1rem 2rem; */
+    /* border: 0.3rem; */
     border-radius: 0.15rem;
+    margin-top: 1rem;
     transition: background-color 0.25s ease-in-out;
+    max-width:10rem;
 }
 
-/*changing colour of text field input bar normally*/
-input{
-    background-color: #EBFC72;
-}
 
 /*changing colour of text field input bar on hover*/
 input:hover {
-    background-color: #FC72CA
+    background-color: #FF5C00;
 }
 
 /*changing colour of text field input bar on focus*/
 input:focus {
-    background-color: #FCFAF7;
+    background-color: #ffffff;
 }
 
 /*changing colour of text field input bar when active*/
 input:active {
-    background-color: #FCFAF7;
+    background-color: #ffffff;
 }
 
 /*adding space between form text fields*/
+/*changing colour of text field input bar normally*/
 input {
-    margin-bottom: 0.9rem;
-    margin-right: 0.9rem;
+    /* margin: 1rem 1rem 1rem 1.5rem; */
     border: 0.1rem;
     padding: 0.5rem;
     border-radius: 0.15rem;
+    background-color: #EBFC72;
 }
+
+/* making text fields responsive/longer*/
+.text-input{
+    width:40vw;
+    min-width:20rem;
+    max-width:50rem;
+    /* min-width:40vw; */
+}
+
+/* making review input larger (longer) than one line with formatting to match text inputs */
+textarea:hover{
+    background-color: #FF5C00;
+}
+
+textarea {
+    /* margin: 1rem 1rem 1rem 1.5rem; */
+    border: 0.1rem;
+    padding: 0.5rem;
+    border-radius: 0.15rem;
+    background-color: #EBFC72;
+}
+
+/*changing colour of text field input bar on focus*/
+textarea:focus {
+    background-color: #ffffff;
+}
+
+/*changing colour of text field input bar when active*/
+textarea:active {
+    background-color: #ffffff;
+}
+
+
 
 /* Changing placeholder text font and colour
 I used this website for the code for how to do this
@@ -118,6 +164,8 @@ input::placeholder {
 /*adding space between form text fields*/
 label {
     font-family: "Alte Haas Grotesk", Helvetica, sans-serif;
+    margin-right:1rem;
+    /* margin-bottom:0.5rem; */
 }
 
 select {
@@ -134,7 +182,7 @@ select {
 https://stackoverflow.com/questions/10484053/change-select-list-option-background-colour-on-hover
 */
 select:hover {
-    background-color: #FC72CA;
+    background-color: #FF5C00;
 }
 
 select:active,
@@ -181,6 +229,16 @@ h4 {
     font-size: 1.4rem;
 }
 
+/* for text smaller than p*/
+.p1{
+    font-size:0.9rem;
+}
+
+/* for text of price */
+.price{
+    color:#FF5C00;
+}
+
 /* logo styling for header */
 .logo {
     font-family: "Pilowlava", Helvetica, sans-serif;
@@ -204,27 +262,73 @@ p{
 }
 
 
-
+/* IMAGE STYLING */
 
 /* landing image */
-
 .landing-image{
  max-width: 100vw;
 }
 
-.landing-image-small{
-    max-width: 16vw;
-    position:relative;
-   }
-
 .landing-image-relative{
-    max-width: 16vw;
-    position:absolute;
-    left:0;
-    bottom:0;
-    z-index:1;
+    position:relative;
+    height:auto;
+    min-width:10vw;
+    max-width:10rem;
+   }
+
+   .image-medium{
+    max-width: 20vw;
+    position:relative;
+    height:auto;
+    min-width:10vw;
+   }
+
+   /*for featured listings on landing page*/
+   .featured-listing-image{
+    width:15vw;
+    max-width: 20rem;
+    position:relative;
+    height:auto;
+    min-width:15rem;
+   }
+
+   /* when broswer size smaller than 50 rem modify image sizes */
+   @media screen and (max-width: 50rem){
+
+  /*for featured listings on landing page*/
+    .featured-listing-image{
+    width:7rem;
+    height:auto;
+   }
+
+
+   /* body{
+    color:#FF5C00
+   } */
+
 
    }
+
+
+   /* Change opacity of image link on hover */
+/* I referred to this website for how to ease in and out for the opacity change
+https://www.w3schools.com/css/css3_transitions.asp
+I referred to this website for how to change the opacity of an image:
+https://www.w3schools.com/howto/howto_css_image_overlay.asp
+*/
+.image-as-link:hover {
+    transition: 0.5s;
+    opacity: 0.5;
+}
+
+.image-as-link:focus {
+    transition: 0.5s ease-in-out;
+    opacity: 0.5;
+}
+
+
+
+
 
 /*for page sections with green bg*/
 .green-bg{
@@ -237,5 +341,127 @@ p{
 }
 
 
+/* FIELDSET STYLING */
+fieldset{
+    border:none;
+    margin-bottom: 1rem;
+}
 
 
+
+
+/* ADDING SPACE (PADDING AND/OR MARGINS) BETWEEN SECTIONS */
+
+/* space on sides (responsive) and top and bottom*/
+.padding-section{
+    margin: 1rem 10vw 1rem 10vw;
+}
+
+/* space on top/bottom only*/
+.no-padding-section{
+    margin-top: 1rem;
+    margin-bottom:1rem;
+}
+
+/* for padding around cart information text*/
+.box-padding-around{
+    margin:2rem;
+}
+
+.margin-sides{
+    margin-right:2rem;
+    margin-left:2rem;
+}
+
+.fixed-element{
+    position: fixed;
+}
+
+.margin-below{
+    margin-bottom:0.5rem;
+}
+
+/* add padding only on right */
+.box-padding-right{
+    padding-right:1rem;
+}
+
+
+
+/* for dividing sections on home page */
+.large-margin-top-bottom{
+    margin-top:5rem;
+    margin-bottom:5rem;
+}
+
+/* for room below button on checkout page*/
+.large-margin-bottom{
+    margin-bottom:5rem;
+}
+
+/* for dividing text and content on home page */
+.small-margin-top-bottom{
+    margin-top:2rem;
+    margin-bottom:2rem;
+}
+
+/* for dividing cart sections*/
+.large-margin-right{
+    margin-right:4rem;
+}
+
+/*making all text have green background when selected*/
+p::selection {
+    background-color: #EBFC72;
+}
+
+code::selection {
+    background-color: #EBFC72;
+}
+
+h1::selection {
+    background-color: #EBFC72;
+}
+
+h2::selection {
+    background-color: #EBFC72;
+}
+
+h3::selection {
+    background-color: #EBFC72;
+}
+
+h4::selection {
+    background-color: #EBFC72;
+}
+
+h5::selection {
+    background-color: #EBFC72;
+}
+
+a::selection {
+    background-color: #EBFC72;
+}
+
+ul::selection {
+    background-color: #EBFC72;
+}
+
+ol::selection {
+    background-color: #EBFC72;
+}
+
+li::selection {
+    background-color: #EBFC72;
+}
+
+/* make image ratio locked and not extend past full size*/
+/*I used this website for a reference of how to have the image scale up without distorting to fit flexbox size
+https://www.javatpoint.com/how-to-change-image-size-in-css#:~:text=Sometimes%2C%20it%20is%20required%20to,the%20width%20of%20their%20container.
+*/
+img {
+    object-fit: cover;
+    /* padding: 0.5rem; */
+    max-width: 100%;
+    height: auto;
+}
