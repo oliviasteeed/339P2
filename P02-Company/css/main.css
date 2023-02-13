@@ -90,7 +90,7 @@ https://www.w3schools.com/howto/howto_css_round_buttons.asp
     border-radius: 0.15rem;
     margin-top: 1rem;
     transition: background-color 0.25s ease-in-out;
-    max-width:10rem;
+    width:10rem;
 }
 
 
@@ -229,6 +229,23 @@ h4 {
     font-size: 1.4rem;
 }
 
+h5 {
+    font-family: "Alte Haas Grotesk", Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 1.2rem;
+}
+
+/* increased line spacing in p text */
+p {
+    max-width: 40rem;
+    line-height: 150%;
+}
+
+/* increased line spacing with lists */
+li {
+    padding-bottom: 1rem;
+}
+
 /* for text smaller than p*/
 .p1{
     font-size:0.9rem;
@@ -327,18 +344,28 @@ https://www.w3schools.com/howto/howto_css_image_overlay.asp
 }
 
 
-
-
-
 /*for page sections with green bg*/
 .green-bg{
     background-color:#EBFC72;
 }
 
-/*for page sections with white bg*/
+/*for showing brand colours on styleguide */
 .white-bg{
     background-color:#FCFAF7;
 }
+
+.red-bg{
+    background-color: #FF5C00;
+}
+
+.dark-green-bg{
+    background-color: #073D02;
+}
+
+.border-bg{
+    border:0.5px #073D02 solid;
+}
+
 
 
 /* FIELDSET STYLING */
@@ -405,7 +432,7 @@ fieldset{
     margin-bottom:2rem;
 }
 
-/* for dividing cart sections*/
+/* for dividing cart sections and making space between page content and footer*/
 .large-margin-right{
     margin-right:4rem;
 }
