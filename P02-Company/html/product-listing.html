@@ -9,7 +9,7 @@
 
     <title>ABOUT</title>
 
-    <link href="../css/main.css" rel="stylesheet">
+    <!-- <link href="../css/main.css" rel="stylesheet"> -->
     <link href="../css/fonts.css" rel="stylesheet">
     <link href="../css/flexbox.css" rel="stylesheet">
 
@@ -38,27 +38,42 @@
     <section class="padding-section">
 
         <section>
-            <div class="wrapper">
+            <div class="">
                 <div class="container">
                     <div class="image-container">
-                        <img src="img/pink_philo.jpg" class="pdp-img" alt="Pretty green and pink variegated plant">
+                        <img src="../img/pink_philo.jpg" class="pdp-img" alt="Pretty green and pink variegated plant">
                     </div>
                     <div class="price-child">
                         <div class="body-copy-1">
-                            <h2 class="pdp-title">pink princess philodendron</h2>
-                            <h3 class="pdp-price">$15</h3>
+                            <h2 class="">pink princess philodendron</h2>
+                            <h3 class="pdp-price price">$5</h3>
                         </div>
                         <div class="body-copy-2">
                             <p class="pdp-body-copy">This Pink Princess is fully rooted in an 8” pot. Easy to grow and
                                 has stunning pink leaves. A real showpiece for your shelf! </p>
-                            <p class="pdp-body-copy2"> - Bright, indirect light (more light means more pink leaves)
+                            <!-- <p class="pdp-body-copy2"> - Bright, indirect light (more light means more pink leaves)
                                 <br>-
-                                Water once a week, allow to dry between waterings <br> - Fertilize monthly</p>
+                                Water once a week, allow to dry between waterings <br> - Fertilize monthly</p> -->
+                                <ul>
+                                    <li>Bright, indirect light (more light means more pink leaves)</li>
+                                    <li> Water once a week, allow to dry between waterings</li>
+                                    <li> Fertilize monthly</li>
+                                </ul>
                         </div>
 
                         <div class="buttons">
-                            <input type="submit" value="quantity" class="btn1">
+                            <!-- <input type="submit" value="quantity" class="btn1"> -->
                             <!-- <input type="submit" value="add to cart" class="btn2"> -->
+
+                            <label for="dropdown-input"> quantity
+                                <select name="dropdown-input" id="dropdown-input" class="box-row">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </label>
 
                             <input class="button" type="submit" value="add to cart" onclick="window.location.href='../html/cart.html';"> <!-- olivia added this-->
 
@@ -67,8 +82,9 @@
 
                     <div class="container-2">
                         <div class="meet-seller">
-                            <p>Meet the Planter</p>
-                            <p class="hyperlink">view shelf</p>
+                            <a href="#" class="box-padding-right">meet the planter </a>
+                            <a href="#"> view shelf</a>
+                            <!-- <p class="hyperlink">view shelf</p> -->
                         </div>
                     </div>
                 </div>
@@ -77,14 +93,14 @@
 
         <!-- product recommendation -->
         <section class="recommendations1">
-            <div class="wrapper">
+            <div class="">
                 <div class="recommended-sellers">
-                    <h2>from other sellers</h2>
+                    <h3>from other sellers</h3>
                     <p class="hyperlink2">view all</p>
                 </div>
                 <div class="container2">
                     <div class="product-img-1">
-                        <img src="img/img12.png" class="image-as-link" alt="pretty green and pink variegated plant" width="250" height="250" onclick="window.location.href='../html/product-listing.html';">
+                        <img src="../img/img12.png" class="image-as-link" alt="pretty green and pink variegated plant" width="250" height="250" onclick="window.location.href='../html/product-listing.html';">
                         <div class="product-details">
                             <p class="product-name">beautiful pink princess plant</p>
                             <p class="product-price">$5</p>
@@ -93,7 +109,7 @@
 
                     <!-- product 2 -->
                     <div class="product-img-1">
-                        <img src="img/img10.png" class="image-as-link" alt="pretty green and pink variegated plant" width="250" height="250" onclick="window.location.href='../html/product-listing.html';">
+                        <img src="../img/img10.png" class="image-as-link" alt="pretty green and pink variegated plant" width="250" height="250" onclick="window.location.href='../html/product-listing.html';">
                         <div class="product-details">
                             <p class="product-name">beautiful pink princess plant</p>
                             <p class="product-price">$5</p>
@@ -102,7 +118,7 @@
                     <!-- end of prodyuct4-->
                     <!-- product 3 -->
                     <div class="product-img-1">
-                        <img src="img/img13.png" class="image-as-link" alt="pretty green and pink variegated plant" width="250" height="250" onclick="window.location.href='../html/product-listing.html';">
+                        <img src="../img/img13.png" class="image-as-link" alt="pretty green and pink variegated plant" width="250" height="250" onclick="window.location.href='../html/product-listing.html';">
                         <div class="product-details">
                             <p class="product-name">beautiful pink princess plant</p>
                             <p class="product-price">$5</p>
@@ -111,7 +127,7 @@
                     <!-- end of product3 -->
                     <!-- product4 -->
                     <div class="product-img-1">
-                        <img src="img/img9.png" class="image-as-link" alt="pretty green and pink variegated plant" width="250" height="250" onclick="window.location.href='../html/product-listing.html';">
+                        <img src="../img/img9.png" class="image-as-link" alt="pretty green and pink variegated plant" width="250" height="250" onclick="window.location.href='../html/product-listing.html';">
                         <div class="product-details">
                             <p class="product-name">beautiful pink princess plant</p>
                             <p class="product-price">$5</p>
@@ -125,14 +141,14 @@
 
         <!-- product recommendation2 -->
         <section class="recommendations2">
-            <div class="wrapper">
+            <div class="">
                 <div class="recommended-for-you">
-                    <h2>recommended for you</h2>
+                    <h3>recommended for you</h3>
                     <p class="hyperlink2">view all</p>
                 </div>
                 <div class="container2">
                     <div class="product-img-1">
-                        <img src="img/img12.png" class="image-as-link" alt="pretty green and pink variegated plant" width="250" height="250" onclick="window.location.href='../html/product-listing.html';">
+                        <img src="../img/img12.png" class="image-as-link" alt="pretty green and pink variegated plant" width="250" height="250" onclick="window.location.href='../html/product-listing.html';">
                         <div class="product-details">
                             <p class="product-name">beautiful pink princess plant</p>
                             <p class="product-price">$5</p>
@@ -141,7 +157,7 @@
 
                     <!-- product 2 -->
                     <div class="product-img-1">
-                        <img src="img/img10.png" class="image-as-link" alt="pretty green and pink variegated plant" width="250" height="250" onclick="window.location.href='../html/product-listing.html';">
+                        <img src="../img/img10.png" class="image-as-link" alt="pretty green and pink variegated plant" width="250" height="250" onclick="window.location.href='../html/product-listing.html';">
                         <div class="product-details">
                             <p class="product-name">beautiful pink princess plant</p>
                             <p class="product-price">$5</p>
@@ -150,7 +166,7 @@
                     <!-- end of prodyuct4-->
                     <!-- product 3 -->
                     <div class="product-img-1">
-                        <img src="img/img13.png" class="image-as-link" alt="pretty green and pink variegated plant" width="250" height="250" onclick="window.location.href='../html/product-listing.html';">
+                        <img src="../img/img13.png" class="image-as-link" alt="pretty green and pink variegated plant" width="250" height="250" onclick="window.location.href='../html/product-listing.html';">
                         <div class="product-details">
                             <p class="product-name">beautiful pink princess plant</p>
                             <p class="product-price">$5</p>
@@ -159,7 +175,7 @@
                     <!-- end of product3 -->
                     <!-- product4 -->
                     <div class="product-img-1">
-                        <img src="img/img9.png" class="image-as-link" alt="pretty green and pink variegated plant" width="250" height="250" onclick="window.location.href='../html/product-listing.html';">
+                        <img src="../img/img9.png" class="image-as-link" alt="pretty green and pink variegated plant" width="250" height="250" onclick="window.location.href='../html/product-listing.html';">
                         <div class="product-details">
                             <p class="product-name">beautiful pink princess plant</p>
                             <p class="product-price">$5</p>

@@ -1,3 +1,305 @@
+/* /* Type Styling*/
+/* h1 {
+    font-family: "Super Display", 'Times New Roman', Times, serif, serif;
+    font-weight: normal;
+    font-size: 4rem;
+    letter-spacing: -0.12rem;
+}
+
+h2 {
+    font-family: "Super Display", 'Times New Roman', Times, serif, serif;
+    font-weight: normal;
+    font-size: 3rem;
+    letter-spacing: -0.10rem;
+}
+
+h3 {
+    font-family: "Alte Haas Grotesk", Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 1.7rem;
+}
+
+h4 {
+    font-family: "Alte Haas Grotesk", Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 1.4rem;
+} */
+
+/* start of logo styling */
+/* logo styling for header */
+/* .logo {
+    font-family: "Pilowlava", Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 3rem;
+    letter-spacing: -0.30rem;
+    margin-top:1rem;
+    margin-bottom: -5rem;
+    margin-left: 35rem;
+} */
+
+/* .logo1 {
+    font-family: "Pilowlava", Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 3rem;
+    letter-spacing: -0.30rem;
+    margin-top:1rem;
+    margin-bottom: -5rem;
+    margin-left:5rem;
+} */
+
+/* logo styling for navigation section */
+/* .logo-nav {
+    font-family: "Pilowlava", Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 2.5rem;
+    letter-spacing: -0.15rem;
+    cursor: pointer;
+} */
+
+/* end of logo styling */
+
+/* Making header lime green and extend to screen edges*/
+/* header {
+    background-color: #EBFC72;
+    padding: 4rem;
+    margin-left: -3rem;
+    margin-right: -3rem;
+    margin-top: -3rem;
+    width:auto;
+} */
+
+/* footer{
+    background-color: #EBFC72;
+    padding: 4rem;
+    margin-left: -3rem;
+    margin-right: -3rem;
+    margin-top: 18rem;
+    height:10rem;
+    width:auto;
+}  */
+/* setting font for body and color */
+/* body {
+    font-family: "Alte Haas Grotesk", Helvetica, sans-serif;
+    color:black;
+    font-size: 1rem;
+    background-color: #FCFAF7;
+
+}  */
+
+/* .nav-area {
+    list-style: none;
+} */
+
+/* .nav-area li a {
+    color:#073D02;
+    text-decoration:underline;
+  
+}
+  
+.nav-area li a:hover {
+    text-decoration:none;
+}
+
+
+.self-care{
+    margin-left:5.3rem;
+    margin-top:5rem;
+}
+
+.nav1{
+    margin-top:3rem;
+    margin-left:4rem;
+}
+
+.nav2{
+    margin-top:-1.2rem;
+    padding-left: 61rem;
+}
+
+
+.nav3{
+    margin-top:-4.5rem;
+    margin-left:74rem;
+}
+
+.nav4{
+    margin-top:-3.5rem;
+    padding-left:80rem;
+} */
+/* end of same styling across page */
+
+
+/* pdp css */
+.pdp-img{
+    width:100%;
+    height: auto; 
+}
+
+.pdp-title{
+    font-size:2.4em;
+} 
+
+ .pdp-price{
+    max-width:50%;
+    font-size:2em;
+
+}
+
+.product-img-1:hover{
+    opacity: 50%;
+    cursor: pointer;
+}
+
+.pdp-body-copy{
+    font-size:.8rem;
+    max-width:25rem;
+}
+
+.pdp-body-copy2{
+    font-size:.8rem;
+    max-width:25rem;  
+}
+
+
+ .wrapper{
+    margin-left:12em;
+} 
+
+.hyperlink{
+    text-decoration: underline;
+}
+
+.hyperlink2{
+    text-decoration: underline;
+    margin-top:4.2rem;
+}
+
+.product-name{
+    text-decoration: underline;
+    max-width:8rem;
+}
+
+.product-name{
+    text-decoration: underline;
+    max-width:8rem;
+}
+
+.recommendations1{
+    margin-top:5rem;
+}
+.recommendations2{
+    margin-top:3rem;
+}
+
+.buttons{
+ margin-top: 3rem;
+ transition-property: background-color;
+ transition-duration: 0.5s;
+}
+
+.btn1,.btn2{
+    height:3.5em;
+    width:27em;
+    border: none;
+}
+
+.btn1{
+    background-color:#F3E8E0;
+    color:black;
+} 
+
+.btn2{
+    background-color:#EBFC72;
+    color:black;
+} 
+
+.btn2:hover{
+    background-color: #cede5a;
+    cursor: pointer;
+}
+
+.btn1:hover{
+    background-color: #d4cbc4;
+    cursor: pointer;
+}
+
+/* end of pdp css */
+
+/* beginning of about css */
+.paragraph{
+    font-size: 1rem;
+    max-width: 40rem;
+    padding-left: 12rem;
+    padding-right: 2rem;
+    line-height:135%;
+}
+
+.about-title{
+    margin-left:4em;
+    margin-top:2.2em;
+}
+
+.contact-link{
+    color:black;
+    margin-left:12em;
+} 
+
+.about-img{
+    width:25%;
+    height: auto; 
+    margin-left:67%;
+    margin-top:-26%;
+}
+
+.about-img2{
+    width:15%;
+    height: auto; 
+    margin-left:80%;
+    margin-top:-20%;
+}
+/* end of about css */
+
+/* beginning of plp css */
+.wrapper{
+    margin-left:12em;
+}
+
+.plp-body-copy{
+    font-size:.6rem;
+    margin-top: -2.5rem;
+
+}
+.product-img{
+    width:50%;
+    height:50%;
+}
+
+.product-img:hover{
+    opacity: 50%;
+    cursor: pointer;
+}
+
+.product-name1{
+    text-decoration: underline;
+    font-size: .8rem;
+    max-width:100em;
+}
+
+
+.product-price1{
+    font-size: .8rem;
+    /* padding-left:-40rem; */
+}
+
+/* end of plp.css */
+ 
+
+
+
+
+
+
+/* main css document minus img */
 /* main styling */
 
 /* Making header lime green and extend to screen edges*/
@@ -482,15 +784,7 @@ li::selection {
     background-color: #EBFC72;
 }
 
-/* make image ratio locked and not extend past full size*/
-/*I used this website for a reference of how to have the image scale up without distorting to fit flexbox size
-https://www.javatpoint.com/how-to-change-image-size-in-css#:~:text=Sometimes%2C%20it%20is%20required%20to,the%20width%20of%20their%20container.
-*/
-img {
-    object-fit: cover;
-    max-width: 100%;
-    height: auto;
-}
+
 
 
 
