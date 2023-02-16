@@ -309,14 +309,16 @@ p{
     min-width:15rem;
    }
 
+
+
    /* when broswer size smaller than 50 rem modify image sizes */
    @media screen and (max-width: 50rem){
 
   /*for featured listings on landing page*/
-    .featured-listing-image{
-    width:7rem;
-    height:auto;
-   }
+    /* .featured-listing-image{ */
+    /* width:7rem; */
+    /* height:auto; */
+   /* } */
 
 
    /* body{
@@ -336,11 +338,13 @@ https://www.w3schools.com/howto/howto_css_image_overlay.asp
 .image-as-link:hover {
     transition: 0.5s;
     opacity: 0.5;
+    cursor: pointer;
 }
 
 .image-as-link:focus {
     transition: 0.5s ease-in-out;
     opacity: 0.5;
+    cursor: pointer;
 }
 
 
@@ -492,7 +496,9 @@ img {
     height: auto;
 }
 
-
+.learn-img{
+    max-width:50vw;
+}
 
 
 
