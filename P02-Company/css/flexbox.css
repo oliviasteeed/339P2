@@ -112,9 +112,9 @@
     margin-bottom:1rem;
 }
 
-.box-button{
+/* .box-button{ */
     /* justify-content: right; */
-}
+/* } */
 
 .box-right{
     /* justify-self:right; */
@@ -141,6 +141,7 @@
 .flex-1-item{
     flex:1;
 }
+
 
 
 
