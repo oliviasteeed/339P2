@@ -1,7 +1,7 @@
 /* main styling */
 
 /* Making header lime green and extend to screen edges*/
-header{
+header {
     background-color: #EBFC72;
     /* padding: 4rem; */
     margin-left: -2rem;
@@ -15,34 +15,37 @@ footer {
     padding: 2rem 4rem 4rem 4rem;
     margin-left: -2rem;
     margin-right: -0.5rem;
-    margin-bottom: -0.5rem; 
+    margin-bottom: -0.5rem;
 }
 
-/*keeps footer at bottom of the page when there is no scroll*/
-.footer-short-page{
-    position: absolute;
-    bottom:0px;
-    width: 102vw;
+@media screen and (min-height:960px) {
+
+    /*keeps footer at bottom of the page it is too small to have scroll (on big screens)*/
+    .footer-short-page {
+        position: absolute;
+        bottom: 0px;
+        width: 102vw;
+    }
 }
 
 /* LINKS STYLING */
 
 /* basic link */
-.text-link{
+.text-link {
     color: #073D02;
 }
 
 /* no underline on navigational links */
-.nav-link{
+.nav-link {
     text-decoration: none;
-    font-size:0.9rem;
+    font-size: 0.9rem;
 }
 
 /* change color/underline of selected tab*/
-.nav-selected{
+.nav-selected {
     text-decoration: underline;
     color: #FF5C00;
-    font-size:0.9rem;
+    font-size: 0.9rem;
 }
 
 /* Styling in-text links (and navigation) */
@@ -66,9 +69,8 @@ a:hover {
 /* I referred to Helmine's lecture example from week 2 for this*/
 a:focus {
     text-decoration: underline;
+    color: #FF5C00;
 }
-
-
 
 
 /* BUTTON AND INPUT STYLING */
@@ -90,7 +92,11 @@ https://www.w3schools.com/howto/howto_css_round_buttons.asp
     border-radius: 0.15rem;
     margin-top: 1rem;
     transition: background-color 0.25s ease-in-out;
-    width:10rem;
+    width: 10rem;
+}
+
+.button:focus {
+    background-color: #FF5C00;
 }
 
 
@@ -120,15 +126,15 @@ input {
 }
 
 /* making text fields responsive/longer*/
-.text-input{
-    width:40vw;
-    min-width:20rem;
-    max-width:50rem;
+.text-input {
+    width: 40vw;
+    min-width: 20rem;
+    max-width: 50rem;
     /* min-width:40vw; */
 }
 
 /* making review input larger (longer) than one line with formatting to match text inputs */
-textarea:hover{
+textarea:hover {
     background-color: #FF5C00;
 }
 
@@ -164,7 +170,7 @@ input::placeholder {
 /*adding space between form text fields*/
 label {
     font-family: "Alte Haas Grotesk", Helvetica, sans-serif;
-    margin-right:1rem;
+    margin-right: 1rem;
     /* margin-bottom:0.5rem; */
 }
 
@@ -247,13 +253,13 @@ li {
 }
 
 /* for text smaller than p*/
-.p1{
-    font-size:0.9rem;
+.p1 {
+    font-size: 0.9rem;
 }
 
 /* for text of price */
-.price{
-    color:#FF5C00;
+.price {
+    color: #FF5C00;
 }
 
 /* logo styling for header */
@@ -274,7 +280,7 @@ li {
     letter-spacing: -0.05rem;
 }
 
-p{
+p {
     max-width: 40vw;
 }
 
@@ -282,54 +288,53 @@ p{
 /* IMAGE STYLING */
 
 /* landing image */
-.landing-image{
- max-width: 100vw;
+.landing-image {
+    max-width: 100vw;
 }
 
-.landing-image-relative{
-    position:relative;
-    height:auto;
-    min-width:10vw;
-    max-width:10rem;
-   }
+.landing-image-relative {
+    position: relative;
+    height: auto;
+    min-width: 10vw;
+    max-width: 10rem;
+}
 
-   .image-medium{
+.image-medium {
     max-width: 20vw;
-    position:relative;
-    height:auto;
-    min-width:10vw;
-   }
+    position: relative;
+    height: auto;
+    min-width: 10vw;
+}
 
-   /*for featured listings on landing page*/
-   .featured-listing-image{
-    width:15vw;
+/*for featured listings on landing page*/
+.featured-listing-image {
+    width: 15vw;
     max-width: 20rem;
-    position:relative;
-    height:auto;
-    min-width:15rem;
-   }
+    /* position:relative; */
+    height: auto;
+    min-width: 15rem;
+}
 
 
+/* when broswer size smaller than 50 rem modify image sizes */
+@media screen and (max-width: 50rem) {
 
-   /* when broswer size smaller than 50 rem modify image sizes */
-   @media screen and (max-width: 50rem){
-
-  /*for featured listings on landing page*/
+    /*for featured listings on landing page*/
     /* .featured-listing-image{ */
     /* width:7rem; */
     /* height:auto; */
-   /* } */
+    /* } */
 
 
-   /* body{
+    /* body{
     color:#FF5C00
    } */
 
 
-   }
+}
 
 
-   /* Change opacity of image link on hover */
+/* Change opacity of image link on hover */
 /* I referred to this website for how to ease in and out for the opacity change
 https://www.w3schools.com/css/css3_transitions.asp
 I referred to this website for how to change the opacity of an image:
@@ -349,32 +354,32 @@ https://www.w3schools.com/howto/howto_css_image_overlay.asp
 
 
 /*for page sections with green bg*/
-.green-bg{
-    background-color:#EBFC72;
+.green-bg {
+    background-color: #EBFC72;
 }
 
 /*for showing brand colours on styleguide */
-.white-bg{
-    background-color:#FCFAF7;
+.white-bg {
+    background-color: #FCFAF7;
 }
 
-.red-bg{
+.red-bg {
     background-color: #FF5C00;
 }
 
-.dark-green-bg{
+.dark-green-bg {
     background-color: #073D02;
 }
 
-.border-bg{
-    border:0.5px #073D02 solid;
+.border-bg {
+    border: 0.5px #073D02 solid;
 }
 
 
 
 /* FIELDSET STYLING */
-fieldset{
-    border:none;
+fieldset {
+    border: none;
     margin-bottom: 1rem;
 }
 
@@ -384,61 +389,61 @@ fieldset{
 /* ADDING SPACE (PADDING AND/OR MARGINS) BETWEEN SECTIONS */
 
 /* space on sides (responsive) and top and bottom*/
-.padding-section{
+.padding-section {
     margin: 1rem 10vw 1rem 10vw;
 }
 
 /* space on top/bottom only*/
-.no-padding-section{
+.no-padding-section {
     margin-top: 1rem;
-    margin-bottom:1rem;
+    margin-bottom: 1rem;
 }
 
 /* for padding around cart information text*/
-.box-padding-around{
-    margin:2rem;
+.box-padding-around {
+    margin: 2rem;
 }
 
-.margin-sides{
-    margin-right:2rem;
-    margin-left:2rem;
+.margin-sides {
+    margin-right: 2rem;
+    margin-left: 2rem;
 }
 
-.fixed-element{
+.fixed-element {
     position: fixed;
 }
 
-.margin-below{
-    margin-bottom:0.5rem;
+.margin-below {
+    margin-bottom: 0.5rem;
 }
 
 /* add padding only on right */
-.box-padding-right{
-    padding-right:1rem;
+.box-padding-right {
+    padding-right: 1rem;
 }
 
 
 
 /* for dividing sections on home page */
-.large-margin-top-bottom{
-    margin-top:5rem;
-    margin-bottom:5rem;
+.large-margin-top-bottom {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 
 /* for room below button on checkout page*/
-.large-margin-bottom{
-    margin-bottom:5rem;
+.large-margin-bottom {
+    margin-bottom: 5rem;
 }
 
 /* for dividing text and content on home page */
-.small-margin-top-bottom{
-    margin-top:2rem;
-    margin-bottom:2rem;
+.small-margin-top-bottom {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 /* for dividing cart sections and making space between page content and footer*/
-.large-margin-right{
-    margin-right:4rem;
+.large-margin-right {
+    margin-right: 4rem;
 }
 
 /*making all text have green background when selected*/
@@ -496,24 +501,24 @@ img {
     height: auto;
 }
 
-.learn-img{
-    max-width:50vw;
+.learn-img {
+    max-width: 50vw;
 }
 
 
 
 /* Claret's CSS */
 
-.about-img{
-    width:25%;
-    height: auto; 
-    margin-left:67%;
-    margin-top:-26%;
+.about-img {
+    width: 25%;
+    height: auto;
+    margin-left: 67%;
+    margin-top: -26%;
 }
 
-.about-img2{
-    width:15%;
-    height: auto; 
-    margin-left:80%;
-    margin-top:-20%;
+.about-img2 {
+    width: 15%;
+    height: auto;
+    margin-left: 80%;
+    margin-top: -20%;
 }
