@@ -32,129 +32,129 @@
 
     </header>
 
-    <body>
 
-        <section class="padding-section">
+    <section class="padding-section">
 
-            <div class="box-row">
+        <div class="box-row">
+
+            <div class="box-column">
+                <h2>thank you for your order</h2>
+                <p>The planter has received your order and will start processing it now! Start clearing shelf
+                    space...</p>
 
                 <div class="box-column">
-                    <h2>thank you for your order</h2>
-                    <p>The planter has received your order and will start processing it now! Start clearing shelf
-                        space...</p>
+                    <div class="box-row box-input"> <!-- review title-->
+                        <label for="review-title"> review title
+                            <input type="text" id="review-title" class="box-row text-input">
+                        </label><br>
+                    </div>
 
-                    <div class="box-column">
-                        <div class="box-row box-input"> <!-- review title-->
-                            <label for="review-title"> review title
-                                <input type="text" id="review-title" class="box-row text-input">
-                            </label><br>
-                        </div>
-
-                        <!-- this website was used as reference for multi line text entry 
+                    <!-- this website was used as reference for multi line text entry 
                         https://www.tutorialspoint.com/How-to-Create-a-Multi-line-Text-Input-Text-Area-In-HTML#:~:text=To%20create%20a%20multi%2Dline%20text%20input%2C%20use%20the%20HTML,input%20text%20over%20multiple%20rows.
                     -->
-                        <div class="box-row box-input"> <!-- review content-->
-                            <label for="review-input"> review (did you like it?)<br>
-                                <textarea rows="5" cols="60" id="review-input" class="text-input"></textarea><br>
-                        </div>
-
-                        <input class="button button-submit" type="submit" value="submit review"
-                            onclick="window.location.href='orderconfirmation.html';">
+                    <div class="box-row box-input"> <!-- review content-->
+                        <label for="review-input"> review (did you like it?)<br>
+                            <textarea rows="5" cols="60" id="review-input" class="text-input"></textarea><br>
+                        </label>
                     </div>
 
-
-                    <input class="button button-submit" type="submit" value="view new listings"
-                        onclick="window.location.href='buy.html';">
+                    <input class="button button-submit" type="submit" value="submit review"
+                        onclick="window.location.href='orderconfirmation.html';">
                 </div>
 
-                <div class="box-column"> <!-- cart summary card -->
 
-                    <section class="section">
-
-                        <div class="box-column"> <!-- stacking components-->
-                            <h4 class="">reciept for order 123456 </h4>
-
-                            <div class="box-row"> <!-- item 1 summary + price beside it-->
-                                <p class="p1">pink princess philodendron x 1</p>
-                                <p class="p1 price box-row box-right"> $5</p>
-                            </div>
-
-                            <div class="box-row"> <!-- item 2 summary + price beside it-->
-                                <p class="p1 box-text">snow queen pothos x 1</p>
-                                <p class="p1 price box-row box-text box-right"> $3</p>
-                            </div>
-
-                            <div class="box-row"> <!-- item 2 summary + price beside it-->
-                                <p class="p1 box-text">marble queen pothos x 1</p>
-                                <p class="p1 price box-row box-text box-right"> $2</p>
-                            </div>
-
-                            <div class="box-row"> <!-- order subtotal-->
-                                <p class="p1 box-text"> order subtotal:</p>
-                                <p class="p1 price box-row box-text box-right"> $9</p>
-                            </div>
-
-                            <div class="box-row"> <!-- shipping-->
-                                <p class="p1"> shipping:</p>
-                                <p class="p1 box-row box-right"> FREE</p>
-                            </div>
-
-                            <div class="box-row"> <!-- taxes -->
-                                <p class="p1"> taxes:</p>
-                                <p class="p1 price box-row box-right"> $1.08</p>
-                            </div>
-
-                            <div class="box-row"> <!-- order total -->
-                                <h4 class=""> order total:</h4>
-                                <h4 class="box-row price box-right"> $10.08</h4>
-                            </div>
-
-                        </div> <!-- end of order summary stack -->
-
-                    </section>
-
-
-                </div> <!-- end of cart summary card -->
-
-
+                <input class="button button-submit" type="submit" value="view new listings"
+                    onclick="window.location.href='buy.html';">
             </div>
-        </section>
+
+            <div class="box-column"> <!-- cart summary card -->
+
+                <section class="section">
+
+                    <div class="box-column"> <!-- stacking components-->
+                        <h4 class="">reciept for order 123456 </h4>
+
+                        <div class="box-row"> <!-- item 1 summary + price beside it-->
+                            <p class="p1">pink princess philodendron x 1</p>
+                            <p class="p1 price box-row box-right"> $5</p>
+                        </div>
+
+                        <div class="box-row"> <!-- item 2 summary + price beside it-->
+                            <p class="p1 box-text">snow queen pothos x 1</p>
+                            <p class="p1 price box-row box-text box-right"> $3</p>
+                        </div>
+
+                        <div class="box-row"> <!-- item 2 summary + price beside it-->
+                            <p class="p1 box-text">marble queen pothos x 1</p>
+                            <p class="p1 price box-row box-text box-right"> $2</p>
+                        </div>
+
+                        <div class="box-row"> <!-- order subtotal-->
+                            <p class="p1 box-text"> order subtotal:</p>
+                            <p class="p1 price box-row box-text box-right"> $9</p>
+                        </div>
+
+                        <div class="box-row"> <!-- shipping-->
+                            <p class="p1"> shipping:</p>
+                            <p class="p1 box-row box-right"> FREE</p>
+                        </div>
+
+                        <div class="box-row"> <!-- taxes -->
+                            <p class="p1"> taxes:</p>
+                            <p class="p1 price box-row box-right"> $1.08</p>
+                        </div>
+
+                        <div class="box-row"> <!-- order total -->
+                            <h4 class=""> order total:</h4>
+                            <h4 class="box-row price box-right"> $10.08</h4>
+                        </div>
+
+                    </div> <!-- end of order summary stack -->
+
+                </section>
 
 
-            <footer class="footer-short-page">
-
-                <nav class="box-row">
-                    <!-- logo and slogan-->
-                    <div class="box-column">
-                        <h4 class="logo-nav top-align"> © FANCYPLANTS 2023</h4>
-                        <p class="p1 top-align"> plant care is self care </p>
-                    </div>
-
-                    <!-- links-->
-                    <div class="box-column">
-                        <a href="../html/buy.html" class="text-link p1 right-align">buy</a>
-                        <a href="../html/sell.html" class="text-link p1 right-align">sell</a>
-                        <a href="../html/learn.html" class="text-link p1 right-align">learn</a>
-                    </div>
-
-                    <div class="box-column">
-                        <a href="../html/about.html" class="text-link p1 right-align">about</a>
-                        <a href="../html/login.html" class="text-link p1 right-align">log in</a>
-                        <a href="../html/cart.html" class="text-link p1 right-align">cart</a>
-                    </div>
-
-                    <div class="box-column">
-                        <a href="../html/styleguide.html" class="text-link p1 right-align">styleguide</a>
-                        <a href="../html/citations.html" class="text-link p1 right-align">citations</a>
-                      </div>
-
-                </nav>
+            </div> <!-- end of cart summary card -->
 
 
-            </footer>
+        </div>
+    </section>
+
+
+    <footer class="footer-short-page">
+
+        <nav class="box-row">
+            <!-- logo and slogan-->
+            <div class="box-column">
+                <h4 class="logo-nav top-align"> © FANCYPLANTS 2023</h4>
+                <p class="p1 top-align"> plant care is self care </p>
+            </div>
+
+            <!-- links-->
+            <div class="box-column">
+                <a href="../html/buy.html" class="text-link p1 right-align">buy</a>
+                <a href="../html/sell.html" class="text-link p1 right-align">sell</a>
+                <a href="../html/learn.html" class="text-link p1 right-align">learn</a>
+            </div>
+
+            <div class="box-column">
+                <a href="../html/about.html" class="text-link p1 right-align">about</a>
+                <a href="../html/login.html" class="text-link p1 right-align">log in</a>
+                <a href="../html/cart.html" class="text-link p1 right-align">cart</a>
+            </div>
+
+            <div class="box-column">
+                <a href="../html/styleguide.html" class="text-link p1 right-align">styleguide</a>
+                <a href="../html/citations.html" class="text-link p1 right-align">citations</a>
+            </div>
+
+        </nav>
+
+
+    </footer>
 
 
 
 
 
-    </body>
+</body>

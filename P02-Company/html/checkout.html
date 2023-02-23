@@ -32,241 +32,240 @@
 
     </header>
 
-    <body>
 
 
-        <section class="padding-section large-margin-bottom">
 
-            <h2>check it out!</h2>
+    <section class="padding-section large-margin-bottom">
 
-            <!-- checkout form -->
+        <h2>check it out!</h2>
 
-            <div class="box-column"> <!-- stack of all shipping/billing information -->
+        <!-- checkout form -->
 
-                <fieldset class=""> <!-- shipping address -->
+        <div class="box-column"> <!-- stack of all shipping/billing information -->
 
-                    <div class="box-column">
-                        <h4> shipping address</h4>
+            <fieldset class=""> <!-- shipping address -->
 
-                        <!-- Name-->
-                        <div class="box-row box-input">
-                            <label for="name-input-shipping"> full name
-                                <input type="text" id="name-input-shipping" class="box-row text-input">
-                            </label><br>
-                        </div>
+                <div class="box-column">
+                    <h4> shipping address</h4>
 
-                        <!-- Street Address-->
-                        <div class="box-row box-input">
-                            <label for="address-input-shipping"> street address
-                                <input type="text" id="address-input-shipping" class="box-row text-input">
-                            </label><br>
-                        </div>
-
-                        <!-- City-->
-                        <div class="box-row box-input">
-                            <label for="city-input-shipping"> city
-                                <input type="text" id="city-input-shipping" class="box-row text-input">
-                            </label>
-                        </div>
-
-                        <!-- Province-->
-                        <div class="box-row box-input">
-                            <label for="province-input-shipping"> province/state
-                                <select name="province-input-shipping" id="province-input-shipping" class="box-row">
-                                    <option value="select-province">Select Province</option>
-                                    <option value="Alberta">Alberta</option>
-                                    <option value="British Columbia">British Columbia</option>
-                                    <option value="Manitoba">Manitoba</option>
-                                    <option value="New Brunswick">New Brunswick</option>
-                                    <option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
-                                    <option value="Northwest Territories">Northwest Territories</option>
-                                    <option value="Nova Scotia">Nova Scotia</option>
-                                    <option value="Nunavut">Nunavut</option>
-                                    <option value="Ontario">Ontario</option>
-                                    <option value="Prince Edward Island">Prince Edward Island</option>
-                                    <option value="Quebec">Quebec</option>
-                                    <option value="Saskatchewan">Saskatchewan</option>
-                                    <option value="Yukon">Yukon</option>
-                                </select>
-                            </label><br>
-                        </div>
-
-                        <!-- Country-->
-                        <div class="box-row box-input">
-                            <label for="country-input-shipping"> country
-                                <select name="country-input-shipping" id="country-input-shipping" class="box-row">
-                                    <option value="Canada">Canada</option>
-                                </select>
-                            </label>
-                        </div>
-
-                        <!-- Postal Code-->
-                        <div class="box-row box-input">
-                            <label for="pc-input-shipping"> postal code
-                                <input type="text" id="pc-input-shipping" placeholder="123 456"
-                                    class="box-row text-input"><br>
-                            </label>
-                        </div>
+                    <!-- Name-->
+                    <div class="box-row box-input">
+                        <label for="name-input-shipping"> full name
+                            <input type="text" id="name-input-shipping" class="box-row text-input">
+                        </label><br>
                     </div>
-                </fieldset> <!-- end of shipping address -->
 
-                <fieldset class=""> <!-- billing address -->
-
-                    <div class="box-column">
-                        <h4> billing address</h4>
-
-                        <!-- Radio to select if billing and shipping address are the same-->
-                        <!-- I used this website as a reference for the radio code since it was not covered in lecture https://www.w3schools.com/tags/att_input_type_radio.asp-->
-                        <div class="box-row box-input">
-                            <input type="radio" id="radio-option-one" name="default-radio">
-                            <label for="radio-option-one"> same as shipping address </label><br>
-                        </div>
-
-                        <!-- Name-->
-                        <div class="box-row box-input">
-                            <label for="name-input-billing"> full name
-                                <input type="text" id="name-input-billing" class="box-row text-input">
-                            </label><br>
-                        </div>
-
-                        <!-- Street Address-->
-                        <div class="box-row box-input">
-                            <label for="address-input-billing"> street address
-                                <input type="text" id="address-input-billing" class="box-row text-input">
-                            </label><br>
-                        </div>
-
-                        <!-- City-->
-                        <div class="box-row box-input">
-                            <label for="city-input-billing"> city
-                                <input type="text" id="city-input-billing" class="box-row text-input">
-                            </label>
-                        </div>
-
-                        <!-- Province-->
-                        <div class="box-row box-input">
-                            <label for="province-input-billing"> province/state
-                                <select name="province-input-billing" id="province-input-billing" class="box-row">
-                                    <option value="select-province">Select Province</option>
-                                    <option value="Alberta">Alberta</option>
-                                    <option value="British Columbia">British Columbia</option>
-                                    <option value="Manitoba">Manitoba</option>
-                                    <option value="New Brunswick">New Brunswick</option>
-                                    <option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
-                                    <option value="Northwest Territories">Northwest Territories</option>
-                                    <option value="Nova Scotia">Nova Scotia</option>
-                                    <option value="Nunavut">Nunavut</option>
-                                    <option value="Ontario">Ontario</option>
-                                    <option value="Prince Edward Island">Prince Edward Island</option>
-                                    <option value="Quebec">Quebec</option>
-                                    <option value="Saskatchewan">Saskatchewan</option>
-                                    <option value="Yukon">Yukon</option>
-                                </select>
-                            </label><br>
-                        </div>
-
-                        <!-- Country-->
-                        <div class="box-row box-input">
-                            <label for="country-input-billing"> country
-                                <select name="country-input-billing" id="country-input-billing" class="box-row">
-                                    <option value="Canada">Canada</option>
-                                </select>
-                            </label>
-                        </div>
-
-                        <!-- Postal Code-->
-                        <div class="box-row box-input">
-                            <label for="pc-input-billing"> postal code
-                                <input type="text" id="pc-input-billing" placeholder="123 456"
-                                    class="box-row text-input"><br>
-                            </label>
-                        </div>
+                    <!-- Street Address-->
+                    <div class="box-row box-input">
+                        <label for="address-input-shipping"> street address
+                            <input type="text" id="address-input-shipping" class="box-row text-input">
+                        </label><br>
                     </div>
-                </fieldset> <!-- end of billing address-->
 
-                <fieldset class=""> <!-- Billing Information-->
-                    <div class="box-column">
-                        <h4> billing information</h4>
+                    <!-- City-->
+                    <div class="box-row box-input">
+                        <label for="city-input-shipping"> city
+                            <input type="text" id="city-input-shipping" class="box-row text-input">
+                        </label>
+                    </div>
 
-                        <!-- Name on Card-->
-                        <div class="box-row box-input">
-                            <label for="cc-name-input"> name on credit card
-                                <input type="text" id="cc-name-input" class="box-row text-input"> <br>
-                            </label><br>
-                        </div>
+                    <!-- Province-->
+                    <div class="box-row box-input">
+                        <label for="province-input-shipping"> province/state
+                            <select name="province-input-shipping" id="province-input-shipping" class="box-row">
+                                <option value="select-province">Select Province</option>
+                                <option value="Alberta">Alberta</option>
+                                <option value="British Columbia">British Columbia</option>
+                                <option value="Manitoba">Manitoba</option>
+                                <option value="New Brunswick">New Brunswick</option>
+                                <option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
+                                <option value="Northwest Territories">Northwest Territories</option>
+                                <option value="Nova Scotia">Nova Scotia</option>
+                                <option value="Nunavut">Nunavut</option>
+                                <option value="Ontario">Ontario</option>
+                                <option value="Prince Edward Island">Prince Edward Island</option>
+                                <option value="Quebec">Quebec</option>
+                                <option value="Saskatchewan">Saskatchewan</option>
+                                <option value="Yukon">Yukon</option>
+                            </select>
+                        </label><br>
+                    </div>
 
-                        <!-- Card Number-->
-                        <div class="box-row box-input">
-                            <label for="cc-number-input"> credit card number
-                                <input type="number" id="cc-number-input" placeholder="1234 5678 9101 1234"
-                                    class="box-row text-input"><br>
-                            </label><br>
-                        </div>
+                    <!-- Country-->
+                    <div class="box-row box-input">
+                        <label for="country-input-shipping"> country
+                            <select name="country-input-shipping" id="country-input-shipping" class="box-row">
+                                <option value="Canada">Canada</option>
+                            </select>
+                        </label>
+                    </div>
 
-                        <!-- Expiry -->
-                        <div class="box-row box-input">
-                            <label for="cc-exp-input"> expiry
-                                <input type="number" id="cc-exp-input" placeholder="12/34"
-                                    class="box-row text-input"><br>
-                            </label><br>
-                        </div>
+                    <!-- Postal Code-->
+                    <div class="box-row box-input">
+                        <label for="pc-input-shipping"> postal code
+                            <input type="text" id="pc-input-shipping" placeholder="123 456"
+                                class="box-row text-input"><br>
+                        </label>
+                    </div>
+                </div>
+            </fieldset> <!-- end of shipping address -->
 
-                        <!-- CVV (number on back)-->
-                        <div class="box-row box-input">
-                            <label for="cc-cvv-input"> CVV
-                                <input type="number" id="cc-cvv-input" placeholder="123" class="box-row text-input">
-                                <br>
-                            </label><br>
-                        </div>
+            <fieldset class=""> <!-- billing address -->
 
+                <div class="box-column">
+                    <h4> billing address</h4>
 
+                    <!-- Radio to select if billing and shipping address are the same-->
+                    <!-- I used this website as a reference for the radio code since it was not covered in lecture https://www.w3schools.com/tags/att_input_type_radio.asp-->
+                    <div class="box-row box-input">
+                        <input type="radio" id="radio-option-one" name="default-radio">
+                        <label for="radio-option-one"> same as shipping address </label><br>
+                    </div>
+
+                    <!-- Name-->
+                    <div class="box-row box-input">
+                        <label for="name-input-billing"> full name
+                            <input type="text" id="name-input-billing" class="box-row text-input">
+                        </label><br>
+                    </div>
+
+                    <!-- Street Address-->
+                    <div class="box-row box-input">
+                        <label for="address-input-billing"> street address
+                            <input type="text" id="address-input-billing" class="box-row text-input">
+                        </label><br>
+                    </div>
+
+                    <!-- City-->
+                    <div class="box-row box-input">
+                        <label for="city-input-billing"> city
+                            <input type="text" id="city-input-billing" class="box-row text-input">
+                        </label>
+                    </div>
+
+                    <!-- Province-->
+                    <div class="box-row box-input">
+                        <label for="province-input-billing"> province/state
+                            <select name="province-input-billing" id="province-input-billing" class="box-row">
+                                <option value="select-province">Select Province</option>
+                                <option value="Alberta">Alberta</option>
+                                <option value="British Columbia">British Columbia</option>
+                                <option value="Manitoba">Manitoba</option>
+                                <option value="New Brunswick">New Brunswick</option>
+                                <option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
+                                <option value="Northwest Territories">Northwest Territories</option>
+                                <option value="Nova Scotia">Nova Scotia</option>
+                                <option value="Nunavut">Nunavut</option>
+                                <option value="Ontario">Ontario</option>
+                                <option value="Prince Edward Island">Prince Edward Island</option>
+                                <option value="Quebec">Quebec</option>
+                                <option value="Saskatchewan">Saskatchewan</option>
+                                <option value="Yukon">Yukon</option>
+                            </select>
+                        </label><br>
+                    </div>
+
+                    <!-- Country-->
+                    <div class="box-row box-input">
+                        <label for="country-input-billing"> country
+                            <select name="country-input-billing" id="country-input-billing" class="box-row">
+                                <option value="Canada">Canada</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <!-- Postal Code-->
+                    <div class="box-row box-input">
+                        <label for="pc-input-billing"> postal code
+                            <input type="text" id="pc-input-billing" placeholder="123 456"
+                                class="box-row text-input"><br>
+                        </label>
+                    </div>
+                </div>
+            </fieldset> <!-- end of billing address-->
+
+            <fieldset class=""> <!-- Billing Information-->
+                <div class="box-column">
+                    <h4> billing information</h4>
+
+                    <!-- Name on Card-->
+                    <div class="box-row box-input">
+                        <label for="cc-name-input"> name on credit card
+                            <input type="text" id="cc-name-input" class="box-row text-input"> <br>
+                        </label><br>
+                    </div>
+
+                    <!-- Card Number-->
+                    <div class="box-row box-input">
+                        <label for="cc-number-input"> credit card number
+                            <input type="number" id="cc-number-input" placeholder="1234 5678 9101 1234"
+                                class="box-row text-input"><br>
+                        </label><br>
+                    </div>
+
+                    <!-- Expiry -->
+                    <div class="box-row box-input">
+                        <label for="cc-exp-input"> expiry
+                            <input type="number" id="cc-exp-input" placeholder="12/34" class="box-row text-input"><br>
+                        </label><br>
+                    </div>
+
+                    <!-- CVV (number on back)-->
+                    <div class="box-row box-input">
+                        <label for="cc-cvv-input"> CVV
+                            <input type="number" id="cc-cvv-input" placeholder="123" class="box-row text-input">
+                            <br>
+                        </label><br>
                     </div>
 
 
-                </fieldset> <!-- end of Billing Information-->
+                </div>
 
-                <input class="button button-submit" type="submit" value="submit order"
-                    onclick="window.location.href='orderconfirmation.html';">
 
+            </fieldset> <!-- end of Billing Information-->
+
+            <input class="button button-submit" type="submit" value="submit order"
+                onclick="window.location.href='orderconfirmation.html';">
+
+        </div>
+
+
+    </section>
+
+
+
+    <footer>
+
+        <nav class="box-row">
+            <!-- logo and slogan-->
+            <div class="box-column">
+                <h4 class="logo-nav top-align"> © FANCYPLANTS 2023</h4>
+                <p class="p1 top-align"> plant care is self care </p>
             </div>
 
+            <!-- links-->
+            <div class="box-column">
+                <a href="../html/buy.html" class="text-link p1 right-align">buy</a>
+                <a href="../html/sell.html" class="text-link p1 right-align">sell</a>
+                <a href="../html/learn.html" class="text-link p1 right-align">learn</a>
+            </div>
 
-        </section>
+            <div class="box-column">
+                <a href="../html/about.html" class="text-link p1 right-align">about</a>
+                <a href="../html/login.html" class="text-link p1 right-align">log in</a>
+                <a href="../html/cart.html" class="text-link p1 right-align">cart</a>
+            </div>
 
+            <div class="box-column">
+                <a href="../html/styleguide.html" class="text-link p1 right-align">styleguide</a>
+                <a href="../html/citations.html" class="text-link p1 right-align">citations</a>
+            </div>
 
-
-        <footer>
-
-            <nav class="box-row">
-                <!-- logo and slogan-->
-                <div class="box-column">
-                    <h4 class="logo-nav top-align"> © FANCYPLANTS 2023</h4>
-                    <p class="p1 top-align"> plant care is self care </p>
-                </div>
-
-                <!-- links-->
-                <div class="box-column">
-                    <a href="../html/buy.html" class="text-link p1 right-align">buy</a>
-                    <a href="../html/sell.html" class="text-link p1 right-align">sell</a>
-                    <a href="../html/learn.html" class="text-link p1 right-align">learn</a>
-                </div>
-
-                <div class="box-column">
-                    <a href="../html/about.html" class="text-link p1 right-align">about</a>
-                    <a href="../html/login.html" class="text-link p1 right-align">log in</a>
-                    <a href="../html/cart.html" class="text-link p1 right-align">cart</a>
-                </div>
-
-                <div class="box-column">
-                    <a href="../html/styleguide.html" class="text-link p1 right-align">styleguide</a>
-                    <a href="../html/citations.html" class="text-link p1 right-align">citations</a>
-                  </div>
-
-            </nav>
+        </nav>
 
 
-        </footer>
+    </footer>
 
-    </body>
+</body>
 
 </html>
