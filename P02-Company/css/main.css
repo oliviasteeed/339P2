@@ -316,22 +316,7 @@ p {
 }
 
 
-/* when broswer size smaller than 50 rem modify image sizes */
-@media screen and (max-width: 50rem) {
 
-    /*for featured listings on landing page*/
-    /* .featured-listing-image{ */
-    /* width:7rem; */
-    /* height:auto; */
-    /* } */
-
-
-    /* body{
-    color:#FF5C00
-   } */
-
-
-}
 
 
 /* Change opacity of image link on hover */
@@ -507,18 +492,52 @@ img {
 
 
 
-/* Claret's CSS */
-
-.about-img {
-    width: 25%;
-    height: auto;
-    margin-left: 67%;
-    margin-top: -26%;
+@media screen and (min-width:815px){
+    .about-img {
+        position:relative;
+        top:5rem;
+        margin-right:10vw;
+        margin-left:2rem;
+    }
+    
+    .about-img2 {
+        position:absolute;
+        top:4rem;
+        left:7rem;
+    }
 }
 
-.about-img2 {
-    width: 15%;
-    height: auto;
-    margin-left: 80%;
-    margin-top: -20%;
-}
+@media screen and (max-width:960px){
+    .about-img {
+       position:relative;
+       margin-bottom:8rem;
+ 
+   }
+   
+   .about-img2 {
+       position:absolute;
+       top:4rem;
+       left:7rem;
+       
+   }
+} 
+
+
+ @media screen and (max-width:815px){
+     .about-img {
+        position:relative;
+        margin-bottom:5rem;
+        margin-top:3rem;
+  
+    }
+    
+    .about-img2 {
+        position:absolute;
+        top:4rem;
+        left:7rem;
+        
+    }
+} 
+
+
+
