@@ -13,20 +13,20 @@ header {
 footer {
     background-color: #EBFC72;
     padding: 2rem 4rem 4rem 4rem;
+    margin-top:10rem;
     margin-left: -2rem;
     margin-right: -0.5rem;
     margin-bottom: -0.5rem;
 }
 
-@media screen and (min-height:960px) {
-
-    /*keeps footer at bottom of the page it is too small to have scroll (on big screens)*/
-    .footer-short-page {
-        position: absolute;
-        bottom: 0px;
-        width: 102vw;
-    }
+/*keeps footer below content*/
+.main-container{
+    min-height:100vh; 
+    display:flex; 
+    flex-direction:column; 
+    justify-content:space-between;
 }
+
 
 /* LINKS STYLING */
 
@@ -195,6 +195,12 @@ select:active,
 select:focus {
     background-color: #EBFC72;
 }
+
+.white-bg-card{
+    background-color:white;
+    padding:1rem;
+}
+
 
 
 
