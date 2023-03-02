@@ -481,18 +481,189 @@
                 <h4>payment form</h4>
 
                 <h5>CSS selector:</h5>
-                <p>form</p>
+                <p>.box-column, input, label, select</p>
 
                 <h5>sample code:</h5>
                 <code>
+                    &lt;div class="box-column"&gt; <br>
 
+    &lt;fieldset&gt; <br>
+
+        &lt;div class="box-column"&gt;<br>
+            &lt;h4&gt; shipping address&lt;/h4&gt;<br>
+
+            &lt;div class="box-row box-input"&gt;<br>
+                &lt;label for="name-input-shipping"&gt; full name<br>
+                    &lt;input type="text" id="name-input-shipping" class="box-row text-input"&gt;<br>
+                &lt;/label&gt;&lt;br&gt;<br>
+            &lt;/div&gt;<br>
+
+            &lt;div class="box-row box-input"&gt;<br>
+                &lt;label for="address-input-shipping"&gt; street address<br>
+                    &lt;input type="text" id="address-input-shipping" class="box-row text-input"&gt;<br>
+                &lt;/label&gt;&lt;br&gt;<br>
+            &lt;/div&gt;<br>
+
+            &lt;div class="box-row box-input"&gt;<br>
+                &lt;label for="city-input-shipping"&gt; city<br>
+                    &lt;input type="text" id="city-input-shipping" class="box-row text-input"&gt;<br>
+                &lt;/label&gt;<br>
+            &lt;/div&gt;<br>
+
+            &lt;div class="box-row box-input"&gt;<br>
+                &lt;label for="province-input-shipping"&gt; province/state<br>
+                    &lt;select name="province-input-shipping" id="province-input-shipping" class="box-row"&gt;<br>
+                        &lt;option value="select-province"&gt;Select Province&lt;/option&gt;<br>
+                        &lt;option value="Alberta"&gt;Alberta&lt;/option&gt;<br>
+                        &lt;option value="British Columbia"&gt;British Columbia&lt;/option&gt;<br>
+                        &lt;option value="Manitoba"&gt;Manitoba&lt;/option&gt;<br>
+                        &lt;option value="New Brunswick"&gt;New Brunswick&lt;/option&gt;<br>
+                        &lt;option value="Newfoundland and Labrador"&gt;Newfoundland and Labrador&lt;/option&gt;<br>
+                        &lt;option value="Northwest Territories"&gt;Northwest Territories&lt;/option&gt;<br>
+                        &lt;option value="Nova Scotia"&gt;Nova Scotia&lt;/option&gt;<br>
+                        &lt;option value="Nunavut"&gt;Nunavut&lt;/option&gt;<br>
+                        &lt;option value="Ontario"&gt;Ontario&lt;/option&gt;<br>
+                        &lt;option value="Prince Edward Island"&gt;Prince Edward Island&lt;/option&gt;<br>
+                        &lt;option value="Quebec"&gt;Quebec&lt;/option&gt;<br>
+                        &lt;option value="Saskatchewan"&gt;Saskatchewan&lt;/option&gt;<br>
+                        &lt;option value="Yukon"&gt;Yukon&lt;/option&gt;<br>
+                    &lt;/select&gt;<br>
+                &lt;/label&gt;&lt;br&gt;<br>
+            &lt;/div&gt;<br>
+
+            &lt;div class="box-row box-input"&gt;<br>
+                &lt;label for="country-input-shipping"&gt; country<br>
+                    &lt;select name="country-input-shipping" id="country-input-shipping" class="box-row"&gt;<br>
+                        &lt;option value="Canada"&gt;Canada&lt;/option&gt;<br>
+                    &lt;/select&gt;<br>
+                &lt;/label&gt;<br>
+            &lt;/div&gt;<br>
+
+
+            &lt;div class="box-row box-input"&gt;<br>
+                &lt;label for="pc-input-shipping"&gt; postal code<br>
+                    &lt;input type="text" id="pc-input-shipping" placeholder="123 456"<br>
+                        class="box-row text-input"&gt;&lt;br&gt;<br>
+                &lt;/label&gt;<br>
+            &lt;/div&gt;<br>
+        &lt;/div&gt;<br>
+    &lt;/fieldset&gt; <br>
+
+    &lt;fieldset&gt; <br>
+
+        &lt;div class="box-column"&gt;<br>
+            &lt;h4&gt; billing address&lt;/h4&gt;<br>
+
+            &lt;div class="box-row box-input"&gt;<br>
+                &lt;input type="radio" id="radio-option-one" name="default-radio"&gt;<br>
+                &lt;label for="radio-option-one"&gt; same as shipping address &lt;/label&gt;&lt;br&gt;<br>
+            &lt;/div&gt;<br>
+
+            &lt;div class="box-row box-input"&gt;<br>
+                &lt;label for="name-input-billing"&gt; full name<br>
+                    &lt;input type="text" id="name-input-billing" class="box-row text-input"&gt;<br>
+                &lt;/label&gt;&lt;br&gt;<br>
+            &lt;/div&gt;<br>
+
+
+            &lt;div class="box-row box-input"&gt;<br>
+                &lt;label for="address-input-billing"&gt; street address<br>
+                    &lt;input type="text" id="address-input-billing" class="box-row text-input"&gt;<br>
+                &lt;/label&gt;&lt;br&gt;<br>
+            &lt;/div&gt;
+
+ 
+            &lt;div class="box-row box-input"&gt;<br>
+                &lt;label for="city-input-billing"&gt; city<br>
+                    &lt;input type="text" id="city-input-billing" class="box-row text-input"&gt;<br>
+                &lt;/label&gt;<br>
+            &lt;/div&gt;<br>
+
+            &lt;div class="box-row box-input"&gt;<br>
+                &lt;label for="province-input-billing"&gt; province/state<br>
+                    &lt;select name="province-input-billing" id="province-input-billing" class="box-row"&gt;<br>
+                        &lt;option value="select-province"&gt;Select Province&lt;/option&gt;<br>
+                        &lt;option value="Alberta"&gt;Alberta&lt;/option&gt;<br>
+                        &lt;option value="British Columbia"&gt;British Columbia&lt;/option&gt;<br>
+                        &lt;option value="Manitoba"&gt;Manitoba&lt;/option&gt;<br>
+                        &lt;option value="New Brunswick"&gt;New Brunswick&lt;/option&gt;<br>
+                        &lt;option value="Newfoundland and Labrador"&gt;Newfoundland and Labrador&lt;/option&gt;<br>
+                        &lt;option value="Northwest Territories"&gt;Northwest Territories&lt;/option&gt;<br>
+                        &lt;option value="Nova Scotia"&gt;Nova Scotia&lt;/option&gt;<br>
+                        &lt;option value="Nunavut"&gt;Nunavut&lt;/option&gt;<br>
+                        &lt;option value="Ontario"&gt;Ontario&lt;/option&gt;<br>
+                        &lt;option value="Prince Edward Island"&gt;Prince Edward Island&lt;/option&gt;<br>
+                        &lt;option value="Quebec"&gt;Quebec&lt;/option&gt;<br>
+                        &lt;option value="Saskatchewan"&gt;Saskatchewan&lt;/option&gt;<br>
+                        &lt;option value="Yukon"&gt;Yukon&lt;/option&gt;<br>
+                    &lt;/select&gt;<br>
+                &lt;/label&gt;&lt;br&gt;<br>
+            &lt;/div&gt;<br>
+
+  
+            &lt;div class="box-row box-input"&gt;<br>
+                &lt;label for="country-input-billing"&gt; country<br>
+                    &lt;select name="country-input-billing" id="country-input-billing" class="box-row"&gt;<br>
+                        &lt;option value="Canada"&gt;Canada&lt;/option&gt;<br>
+                    &lt;/select&gt;<br>
+                &lt;/label&gt;<br>
+            &lt;/div&gt;<br>
+
+            &lt;div class="box-row box-input"&gt;<br>
+                &lt;label for="pc-input-billing"&gt; postal code<br>
+                    &lt;input type="text" id="pc-input-billing" placeholder="123 456"<br>
+                        class="box-row text-input"&gt;&lt;br&gt;<br>
+                &lt;/label&gt;<br>
+            &lt;/div&gt;<br>
+        &lt;/div&gt;<br>
+    &lt;/fieldset&gt; <br>
+
+    &lt;fieldset&gt; <br>
+        &lt;div class="box-column"&gt;<br>
+            &lt;h4&gt; billing information&lt;/h4&gt;<br>
+
+            &lt;div class="box-row box-input"&gt;<br>
+                &lt;label for="cc-name-input"&gt; name on credit card<br>
+                    &lt;input type="text" id="cc-name-input" class="box-row text-input"&gt; &lt;br&gt;<br>
+                &lt;/label&gt;&lt;br&gt;<br>
+            &lt;/div&gt;<br>
+
+            &lt;div class="box-row box-input"&gt;<br>
+                &lt;label for="cc-number-input"&gt; credit card number<br>
+                    &lt;input type="number" id="cc-number-input" placeholder="1234 5678 9101 1234"<br>
+                        class="box-row text-input"&gt;&lt;br&gt;<br>
+                &lt;/label&gt;&lt;br&gt;<br>
+            &lt;/div&gt;<br>
+
+            &lt;div class="box-row box-input"&gt;<br>
+                &lt;label for="cc-exp-input"&gt; expiry<br>
+                    &lt;input type="number" id="cc-exp-input" placeholder="12/34" class="box-row text-input"&gt;&lt;br&gt;<br>
+                &lt;/label&gt;&lt;br&gt;<br>
+            &lt;/div&gt;<br>
+
+            &lt;div class="box-row box-input"&gt;<br>
+                &lt;label for="cc-cvv-input"&gt; CVV<br>
+                    &lt;input type="number" id="cc-cvv-input" placeholder="123" class="box-row text-input"&gt;<br>
+                    &lt;br&gt;<br>
+                &lt;/label&gt;&lt;br&gt;<br>
+            &lt;/div&gt;<br>
+
+
+        &lt;/div&gt;<br>
+
+
+    &lt;/fieldset&gt; <br>
+    &lt;input class="button button-submit" type="submit" value="submit order"
+        onclick="window.location.href='orderconfirmation.html';"&gt;<br>
+
+&lt;/div&gt;<br>
                     </code>
 
                 <h5>rendered element:</h5>
 
                 <div class="box-column"> <!-- stack of all shipping/billing information -->
 
-                    <fieldset class=""> <!-- shipping address -->
+                    <fieldset> <!-- shipping address -->
 
                         <div class="box-column">
                             <h4> shipping address</h4>
@@ -559,7 +730,7 @@
                         </div>
                     </fieldset> <!-- end of shipping address -->
 
-                    <fieldset class=""> <!-- billing address -->
+                    <fieldset> <!-- billing address -->
 
                         <div class="box-column">
                             <h4> billing address</h4>
@@ -633,7 +804,7 @@
                         </div>
                     </fieldset> <!-- end of billing address-->
 
-                    <fieldset class=""> <!-- Billing Information-->
+                    <fieldset> <!-- Billing Information-->
                         <div class="box-column">
                             <h4> billing information</h4>
 
@@ -682,6 +853,164 @@
 
                 <h5>sample code:</h5>
                 <code>
+                    &lt;div class="box-row"&gt;<br>
+
+    &lt;div class="box-column large-margin-right"&gt;<br>
+
+        &lt;section class="no-padding-section white-bg-card"&gt;<br>
+
+            &lt;div class="box-row flex-1-item"&gt;<br>
+
+                &lt;picture class="landing-image-relative"&gt;<br>
+                    &lt;source media="(min-width: 1200px)" srcset="../img/pink_philo_2x.jpg 2x"&gt;<br>
+                    &lt;source srcset="img/pink_philo_1x.jpg 1x, ../img/pink_philo_2x.jpg 2x" type="image/jpg"&gt;<br>
+                    &lt;img src="../img/pink_philo_1x.jpg"<br>
+                        srcset="../img/pink_philo_1x.jpg 1x, ../img/pink_philo_2x.jpg 2x"<br>
+                        alt="pink and green variegated houseplant"&gt;<br>
+                &lt;/picture&gt;<br>
+
+
+                &lt;div class="box-column margin-sides"&gt;<br>
+                    &lt;div class="box-row"&gt;<br>
+                        &lt;h4 class="box-row box-title box-baseline-align"&gt; pink princess philodendron&lt;/h4&gt;<br>
+                        &lt;h4 class="price box-row box-baseline-align box-right"&gt;$5&lt;/h4&gt;<br>
+                    &lt;/div&gt;<br>
+
+                    &lt;div class="box-row"&gt;<br>
+                        &lt;p class="p1 box-baseline-align flex-1-item"&gt; Quantity: 1&lt;/p&gt;<br>
+
+                        &lt;div class="box-baseline-align box-row box-right"&gt;<br>
+                            &lt;a class="p1 text-link box-padding-right" href="#"&gt; edit&lt;/a&gt;<br>
+                            &lt;a class="p1 text-link" href="#"&gt; remove&lt;/a&gt;<br>
+                        &lt;/div&gt;<br>
+                    &lt;/div&gt;<br>
+
+                &lt;/div&gt;<br>
+
+            &lt;/div&gt;<br>
+
+        &lt;/section&gt;<br>
+
+        &lt;section class="no-padding-section white-bg-card"&gt;<br>
+
+            &lt;div class="box-row flex-1-item"&gt;<br>
+
+                &lt;picture class="landing-image-relative"&gt;<br>
+                    &lt;source media="(min-width: 1200px)" srcset="../img/snowqueen_2x.jpg 2x"&gt;<br>
+                    &lt;source srcset="../img/snowqueen_1x.jpg 1x, ../img/snowqueen_2x.jpg 2x" type="image/jpg"&gt;<br>
+                    &lt;img src="../img/snowqueen_1x.jpg" srcset="../img/snowqueen_1x.jpg 1x, ../img/snowqueen_2x.jpg 2x"<br>
+                        alt="elegant white and green variegated houseplant"&gt;<br>
+                &lt;/picture&gt;<br>
+
+                &lt;div class="box-column margin-sides"&gt;<br>
+                    &lt;div class="box-row"&gt;<br>
+                        &lt;h4 class="box-row box-title box-baseline-align"&gt; snow queen pothos&lt;/h4&gt;<br>
+                        &lt;h4 class="price box-row box-baseline-align box-right"&gt;$3&lt;/h4&gt;<br>
+                    &lt;/div&gt;<br>
+
+                    &lt;div class="box-row"&gt;<br>
+                        &lt;p class="p1 box-baseline-align flex-1-item"&gt; Quantity: 1&lt;/p&gt;<br>
+
+                        &lt;div class="box-baseline-align box-row box-right"&gt;<br>
+                            &lt;a class="p1 text-link box-padding-right" href="#"&gt; edit&lt;/a&gt;<br>
+                            &lt;a class="p1 text-link" href="#"&gt; remove&lt;/a&gt;<br>
+                        &lt;/div&gt;<br>
+                    &lt;/div&gt;<br>
+
+                &lt;/div&gt;<br>
+
+            &lt;/div&gt;<br>
+
+        &lt;/section&gt;<br>
+
+        &lt;section class="no-padding-section white-bg-card"&gt;<br>
+
+            &lt;div class="box-row flex-1-item"&gt;<br>
+
+                &lt;picture class="landing-image-relative"&gt;<br>
+                    &lt;source media="(min-width: 1200px)" srcset="../img/marble_pothos_2x.jpg 2x"&gt;<br>
+                    &lt;source srcset="img/marble_pothos_1x.jpg 1x, ../img/marble_pothos_2x.jpg 2x" type="image/jpg"&gt;<br>
+                    &lt;img src="../img/marble_pothos_1x.jpg"<br>
+                        srcset="../img/marble_pothos_1x.jpg 1x, ../img/marble_pothos_2x.jpg 2x"<br>
+                        alt="yellow and green housplant with marbled leaves"&gt;<br>
+                &lt;/picture&gt;<br>
+
+                &lt;div class="box-column margin-sides"&gt;<br>
+                    &lt;div class="box-row"&gt;<br>
+                        &lt;h4 class="box-row box-title box-baseline-align"&gt; marble queen pothos&lt;/h4&gt;<br>
+                        &lt;h4 class="price box-row box-baseline-align box-right"&gt;$2&lt;/h4&gt;<br>
+                    &lt;/div&gt;<br>
+
+                    &lt;div class="box-row"&gt;<br>
+                        &lt;p class="p1 box-baseline-align flex-1-item"&gt; Quantity: 1&lt;/p&gt;<br>
+
+                        &lt;div class="box-baseline-align box-row box-right"&gt;<br>
+                            &lt;a class="p1 text-link box-padding-right" href="#"&gt; edit&lt;/a&gt;<br>
+                            &lt;a class="p1 text-link" href="#"&gt; remove&lt;/a&gt;<br>
+                        &lt;/div&gt;<br>
+                    &lt;/div&gt;<br>
+
+                &lt;/div&gt;<br>
+
+            &lt;/div&gt;<br>
+
+        &lt;/section&gt;<br>
+
+
+    &lt;/div&gt;<br>
+
+
+    &lt;div class="box-column"&gt;<br>
+
+        &lt;section class="section white-bg-card"&gt;<br>
+
+            &lt;div class="box-column"&gt;<br>
+                &lt;h4 class=""&gt;order summary &lt;/h4&gt;<br>
+
+                &lt;div class="box-row"&gt;<br>
+                    &lt;p class="p1"&gt;pink princess philodendron x 1&lt;/p&gt;<br>
+                    &lt;p class="p1 price box-row box-right"&gt; $5&lt;/p&gt;<br>
+                &lt;/div&gt;<br>
+
+                &lt;div class="box-row"&gt;<br>
+                    &lt;p class="p1 box-text"&gt;snow queen pothos x 1&lt;/p&gt;<br>
+                    &lt;p class="p1 price box-row box-text box-right"&gt; $3&lt;/p&gt;<br>
+                &lt;/div&gt;<br>
+
+                &lt;div class="box-row"&gt;<br>
+                    &lt;p class="p1 box-text"&gt;marble queen pothos x 1&lt;/p&gt;<br>
+                    &lt;p class="p1 price box-row box-text box-right"&gt; $2&lt;/p&gt;<br>
+                &lt;/div&gt;<br>
+
+                &lt;div class="box-row"&gt;<br>
+                    &lt;p class="p1 box-text"&gt; order subtotal:&lt;/p&gt;<br>
+                    &lt;p class="p1 price box-row box-text box-right"&gt; $9&lt;/p&gt;<br>
+                &lt;/div&gt;<br>
+
+                &lt;div class="box-row"&gt;<br>
+                    &lt;p class="p1"&gt; shipping:&lt;/p&gt;<br>
+                    &lt;p class="p1 box-row box-right"&gt; FREE&lt;/p&gt;<br>
+                &lt;/div&gt;<br>
+
+                &lt;div class="box-row"&gt;<br>
+                    &lt;p class="p1"&gt; taxes:&lt;/p&gt;<br>
+                    &lt;p class="p1 price box-row box-right"&gt; $1.08&lt;/p&gt;<br>
+                &lt;/div&gt;<br>
+
+                &lt;div class="box-row"&gt;<br>
+                    &lt;h4 class=""&gt; order total:&lt;/h4&gt;<br>
+                    &lt;h4 class="box-row price box-right"&gt; $10.08&lt;/h4&gt;<br>
+                &lt;/div&gt;<br>
+
+                &lt;input class="button button-submit" type="submit" value="checkout"<br>
+                    onclick="window.location.href='checkout.html';"&gt;<br>
+
+            &lt;/div&gt;<br>
+        &lt;/section&gt;<br>
+
+    &lt;/div&gt;<br>
+
+&lt;/div&gt;<br>
 
                     </code>
 
@@ -690,7 +1019,7 @@
 
                     <div class="box-column large-margin-right"> <!-- cart items stack -->
 
-                        <section class="no-padding-section"> <!-- cart item 1 -->
+                        <section class="no-padding-section white-bg-card"> <!-- cart item 1 -->
 
                             <div class="box-row flex-1-item">
 
@@ -702,8 +1031,6 @@
                                         srcset="../img/pink_philo_1x.jpg 1x, ../img/pink_philo_2x.jpg 2x"
                                         alt="pink and green variegated houseplant">
                                 </picture>
-
-                                <!-- <img src="../img/pink_philo.jpg" class="landing-image-relative" alt="pink and green variegated houseplant"> -->
 
                                 <div class="box-column margin-sides"> <!-- item information-->
                                     <div class="box-row">
@@ -727,7 +1054,7 @@
 
                         </section> <!-- end of cart item 1 -->
 
-                        <section class="no-padding-section"> <!-- cart item 2 -->
+                        <section class="no-padding-section white-bg-card"> <!-- cart item 2 -->
 
                             <div class="box-row flex-1-item">
 
@@ -739,8 +1066,6 @@
                                         srcset="../img/snowqueen_1x.jpg 1x, ../img/snowqueen_2x.jpg 2x"
                                         alt="elegant white and green variegated houseplant">
                                 </picture>
-
-                                <!-- <img src="../img/snowqueen-image.jpg" class="landing-image-relative" alt="elegant white and green variegated houseplant"> -->
 
                                 <div class="box-column margin-sides"> <!-- item information-->
                                     <div class="box-row">
@@ -763,7 +1088,7 @@
 
                         </section> <!-- end of cart item 2 -->
 
-                        <section class="no-padding-section"> <!-- cart item 3 -->
+                        <section class="no-padding-section white-bg-card"> <!-- cart item 3 -->
 
                             <div class="box-row flex-1-item">
 
@@ -775,8 +1100,6 @@
                                         srcset="../img/marble_pothos_1x.jpg 1x, ../img/marble_pothos_2x.jpg 2x"
                                         alt="yellow and green housplant with marbled leaves">
                                 </picture>
-
-                                <!-- <img src="../img/marble_pothos.jpg" class="landing-image-relative" alt="pretty yellow, white and green variegated houseplant"> -->
 
                                 <div class="box-column margin-sides"> <!-- item information-->
                                     <div class="box-row">
@@ -805,7 +1128,7 @@
 
                     <div class="box-column"> <!-- cart summary card -->
 
-                        <section class="section">
+                        <section class="section white-bg-card">
 
                             <div class="box-column"> <!-- stacking components-->
                                 <h4 class="">order summary </h4>
@@ -856,11 +1179,7 @@
             </section> <!-- end of checkout cart section-->
 
 
-
-
         </section> <!-- end of combined elements section-->
-
-
 
 
     </div> <!-- end of page content vertical stack -->
