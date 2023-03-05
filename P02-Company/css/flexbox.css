@@ -43,7 +43,8 @@
         flex-wrap:nowrap;
         flex-direction:column;
         padding:2rem;
-        gap:.5rem;
+        gap:.5rem;      
+        /* increased gap between nav by .5 */
     }
     
     .box-nav{
