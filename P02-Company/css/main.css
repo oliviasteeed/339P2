@@ -218,30 +218,23 @@ body {
 h1 {
     font-family: "Super Display", 'Times New Roman', Times, serif, serif;
     font-weight: normal;
-    font-size: 4rem;
-    letter-spacing: -0.12rem;
-}
-
-h2 {
-    font-family: "Super Display", 'Times New Roman', Times, serif, serif;
-    font-weight: normal;
     font-size: 3rem;
     letter-spacing: -0.10rem;
 }
 
-h3 {
+h2 {
     font-family: "Alte Haas Grotesk", Helvetica, sans-serif;
     font-weight: normal;
     font-size: 1.7rem;
 }
 
-h4 {
+h3 {
     font-family: "Alte Haas Grotesk", Helvetica, sans-serif;
     font-weight: normal;
     font-size: 1.4rem;
 }
 
-h5 {
+h4 {
     font-family: "Alte Haas Grotesk", Helvetica, sans-serif;
     font-weight: normal;
     font-size: 1.2rem;
