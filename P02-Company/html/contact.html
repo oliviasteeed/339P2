@@ -20,7 +20,7 @@
   <header>
 
     <!-- navigation menu-->
-    <nav class="box-main-nav">
+    <nav class="box">
       <a href="../html/buy.html" class="box-nav nav-link">buy</a>
       <a href="../html/sell.html" class="box-nav nav-link">sell</a>
       <a href="../html/learn.html" class="box-nav nav-link">learn</a>
@@ -32,69 +32,67 @@
 
   </header>
 
+  <body>
 
-  <section class="padding-section main-container">
-    <h1>contact us!</h1>
-    <p> issues? comments? planting advice? we'll take anything.</p>
+    <section class="padding-section">
+      <h1>contact us!</h1>
+      <p> issues? comments? planting advice? we'll take anything.</p>
 
-    <div class="box-column">
-      <div class="box-row box-input"> <!-- feedback title-->
-        <label for="feedback-title"> subject
-          <input type="text" id="feedback-title" class="box-row text-input">
-        </label><br>
-      </div>
+      <div class="box-column">
+        <div class="box-row box-input"> <!-- feedback title-->
+          <label for="feedback-title"> subject
+            <input type="text" id="feedback-title" class="box-row text-input">
+          </label><br>
+        </div>
 
-      <!-- this website was used as reference for multi line text entry 
+        <!-- this website was used as reference for multi line text entry 
         https://www.tutorialspoint.com/How-to-Create-a-Multi-line-Text-Input-Text-Area-In-HTML#:~:text=To%20create%20a%20multi%2Dline%20text%20input%2C%20use%20the%20HTML,input%20text%20over%20multiple%20rows.
-        -->
-      <div class="box-row box-input"> <!-- feedback content-->
-        <label for="feedback-input"> message <br>
-          <textarea rows="5" cols="60" id="feedback-input" class="text-input"></textarea><br>
-        </label>
+    -->
+        <div class="box-row box-input"> <!-- feedback content-->
+          <label for="feedback-input"> message <br>
+            <textarea rows="5" cols="60" id="feedback-input" class="text-input"></textarea><br>
+        </div>
+
+        <input class="button button-submit" type="submit" value="send feedback"
+          onclick="window.location.href='../html/contact-confirmation.html';">
       </div>
 
-      <input class="button button-submit" type="submit" value="send feedback"
-        onclick="window.location.href='../html/contact-confirmation.html';">
-    </div>
+
+    </section>
 
 
-  </section>
+    <footer class="footer-short-page">
 
+      <div class="box-row">
+        <!-- logo and slogan-->
+        <div class="box-column">
+          <h4 class="logo-nav top-align"> © FANCYPLANTS 2023</h4>
+          <p class="p1 top-align"> plant care is self care </p>
+        </div>
 
-  <footer class="footer-short-page">
+        <!-- links-->
+        <div class="box-column">
+          <a href="../html/buy.html" class="text-link p1 right-align">buy</a>
+          <a href="../html/sell.html" class="text-link p1 right-align">sell</a>
+          <a href="../html/learn.html" class="text-link p1 right-align">learn</a>
+        </div>
 
-    <nav class="box-row">
-      <!-- logo and slogan-->
-      <div class="box-column">
-        <h3 class="logo-nav top-align"> © FANCYPLANTS 2023</h3>
-        <p class="p1 top-align"> plant care is self care </p>
+        <div class="box-column">
+          <a href="../html/about.html" class="text-link p1 right-align">about</a>
+          <a href="../html/login.html" class="text-link p1 right-align">log in</a>
+          <a href="../html/cart.html" class="text-link p1 right-align">cart</a>
+        </div>
+
+        <div class="box-column">
+          <a href="../html/styleguide.html" class="text-link p1 right-align">styleguide</a>
+          <a href="../html/citations.html" class="text-link p1 right-align">citations</a>
+        </div>
+
       </div>
 
-      <!-- links-->
-      <div class="box-column">
-        <a href="../html/buy.html" class="text-link p1 right-align">buy</a>
-        <a href="../html/sell.html" class="text-link p1 right-align">sell</a>
-        <a href="../html/learn.html" class="text-link p1 right-align">learn</a>
-      </div>
 
-      <div class="box-column">
-        <a href="../html/about.html" class="text-link p1 right-align">about</a>
-        <a href="../html/contact.html" class="text-link p1 right-align">contact</a>
-        <a href="../html/login.html" class="text-link p1 right-align">log in</a>
-        <a href="../html/cart.html" class="text-link p1 right-align">cart</a>
-      </div>
+    </footer>
 
-      <div class="box-column">
-        <a href="../html/styleguide.html" class="text-link p1 right-align">styleguide</a>
-        <a href="https://github.com/oliviasteeed/339P2" class="text-link p1 right-align">gitbhub repository</a>
-        <a href="../html/citations.html" class="text-link p1 right-align">citations</a>
-      </div>
-
-    </nav>
-
-
-  </footer>
-
-</body>
+  </body>
 
 </html>
